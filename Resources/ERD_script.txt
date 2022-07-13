@@ -4,41 +4,38 @@ listing_id PK int
 host_id FK >- hs.host_id
 name string
 description string
-neighborhood_overview string
-latitude float
-longitude float
 property_type string
 room_type string
 accommodates int
-bathrooms int
-bathrooms_text string
 bedrooms int
 beds int
-amenities json
-price float
 minimum_nights int
 maximum_nights int
+instant_bookable boolean
+
+Amenities
+-
+listing_id PK FK >- ls.listing_id
+type string
+available boolean
+
+Availability
+-
+listing_id PK FK >- ls.listing_id
 has_availability boolean
 availability_30 int
 availability_60 int
 availability_90 int
 availability_365 int
-number_of_reviews int
-number_of_reviews_ltm int
-number_of_reviews_l30d int
-first_review date
-last_review date
-review_scores_rating float	
-review_scores_accuracy float
-review_scores_cleanliness float
-review_scores_checkin float
-review_scores_communication float	
-review_scores_location float
-review_scores_value float
-instant_bookable boolean
 
+Location
+-
+listing_id PK FK >- ls.listing_id
+neighborhood_overview string
+latitude float
+longitude float
 
-Hosts as hs
+Host as hs
 -
 host_id PK int
 host_name string
@@ -57,20 +54,24 @@ host_total_listings_count int
 host_has_profile_pic boolean
 host_identity_verified boolean
 
-Calendar as cal
--
-listing_id PK FK >- ls.listing_id
-date PK date
-available boolean
-price float
-minimum_nights int
-maximum_nights int
-
 Reviews
 -
-review_id PK int
 listing_id PK FK >- ls.listing_id
-date date
-reviewer_id int
-reviewer_name string
-comments string
+number_of_reviews int
+number_of_reviews_ltm int
+number_of_reviews_l30d int
+first_review date
+last_review date
+review_scores_rating float	
+review_scores_accuracy float
+review_scores_cleanliness float
+review_scores_checkin float
+review_scores_communication float	
+review_scores_location float
+review_scores_value float
+
+Price
+-
+listing_id PK FK >- ls.listing_id
+date date PK
+price float

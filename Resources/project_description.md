@@ -1,6 +1,6 @@
 # Problem
 
-Analyse Airbnb data to help Toronto hosts to optimize their profits on a new property. 
+Analyse Airbnb data to help Toronto hosts to optimize their profits when listing their property. 
 
 # Project Description
 

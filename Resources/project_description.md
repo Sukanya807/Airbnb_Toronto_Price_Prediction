@@ -25,6 +25,6 @@ Postgres/Mongo? will be integrated to Tableau? to display the data.
 - The chosen database for this project is MongoDB.
 
 ## ERD
-![ERD](../Database/airbnb_db_erd)
+![ERD](../Database/airbnb_db_erd.png)
 
 ## Sample Data

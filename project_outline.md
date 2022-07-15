@@ -1,3 +1,5 @@
+![Untitled design (7)](https://user-images.githubusercontent.com/100486461/179129676-dd07e65c-6cae-4643-9e7a-96702fd7aa43.png)
+
 # Project Overview and Purpose
 
 Airbnb is an online marketplace for short term rentals. Airbnb hosts are allowed to rent their entire homes, apartments, single or shared bedrooms. One of the main challenges faced by the Airbnb hosts is to determine the optimal rent prices. Price depends on number of factors such as property type, room types, ammetities, customer reviews and ratings, neighbourhoods, etc. The aim of this project is to propose a data driven solution by using machine learning to predict rental prices that would help the Toronto Airbnb hosts while renting out their properties.
@@ -35,7 +37,7 @@ Notebook
 - Google Colab
 
 
-Using Inside Airbnb data, this project will include descriptive analysis, using Pandas for data cleansing and MongoDB to store the data. It will also use machine learning to compare listings and predict the target value, using linear regression. Some of the features will include the neighborhood, type of listing, amenities, and information about the host. Visualization will be presented in Tableau dashboard, including ___Possible Visualizations__.
+Using Inside Airbnb data, this project will include descriptive analysis, using Pandas for data cleansing and MongoDB to store the data. It will also use machine learning to compare listings and predict the target value, using linear regression. Some of the features will include the neighborhood, type of listing, amenities, and information about the host. Visualization will be presented in Tableau dashboard, including visualizations.
 
 
 # Hypothesis
@@ -45,20 +47,15 @@ Prices are dependent on factors such as neighbourhoods, room types, number of be
 The images have been attached below for reference. 
 
 ## ERD Diagram
+![airbnb_db_erd](https://user-images.githubusercontent.com/100486461/179129533-3aad5ba1-0ec5-44a1-a0ce-1ab8354c7360.png)
+
 
 ## Machine Learning Model
+<img width="492" alt="ML_steps_Linear_Regression" src="https://user-images.githubusercontent.com/100486461/179129613-26fe5928-952e-49f8-b8b8-6259e8a23c67.png">
+
 
 ## ETL Pipeline Diagram
+![etl_pipeline_project](https://user-images.githubusercontent.com/100486461/179129650-69a922a5-262c-4897-806e-f6ec3108809d.png)
 
 
 We are currently working on the data_cleaning_final jupyter notebook file for the project.
-
-
-
-
-
-
-
-
-
-

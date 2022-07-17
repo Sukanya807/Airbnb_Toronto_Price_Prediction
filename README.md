@@ -60,5 +60,5 @@ The images have been attached below for reference.
 ![etl_pipeline_project](Resources/images/etl_pipeline_project.png)
 
 
-We are currently working on the [data_cleaning_final](data_cleaning_final.ipynb) jupyter notebook file for the project.
+We are currently working on the [clean_data_final.ipynb](clean_data_final.ipynb) jupyter notebook file for the project.
 

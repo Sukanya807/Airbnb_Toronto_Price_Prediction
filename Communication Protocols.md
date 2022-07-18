@@ -16,7 +16,9 @@ Communications will be a mix of the following:
 -  Major milestone meetings
 
 ### Slack and WhatsApp messages
-For daily communication and to reach any team member incase of project emergency. 
+For daily communication amongst team members on questions regarding deliverables, technical tools needed to complete the weekly tasks. Instant messaging will also be used to communicate project emergencies.
+
+and to reach any team member incase of project emergency 
 
 ### Daily standup meetings
 Daily meetings will be held through Zoom. All team members have agreed upon meeting everyday to discuss progress on deliverables for sprint goals. This allows the team to get together and discuss any progress as well as any impedements they are facing.

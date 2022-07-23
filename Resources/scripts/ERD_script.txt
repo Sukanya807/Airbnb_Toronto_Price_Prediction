@@ -1,57 +1,3 @@
-Listings as ls
--
-id varchar PK
-host_response_time varchar
-host_response_rate varchar
-host_is_superhost float 
-host_listings_count float 
-host_identity_verified float 
-neighbourhood varchar 
-latitude float 
-longitude float 
-property_type varchar 
-room_type varchar 
-accommodates int 
-bedrooms float
-beds float 
-price float 
-minimum_nights int 
-maximum_nights int 
-availability_90 int 
-number_of_reviews int 
-review_scores_rating float 
-review_scores_accuracy float 
-review_scores_cleanliness float 
-review_scores_checkin float 
-review_scores_communication float 
-review_scores_location float 
-review_scores_value float 
-instant_bookable int 
-host_active_days float 
-toiletries float 
-high_end_electronics float 
-ac_heater float 
-internet float 
-bbq float 
-home_appliances float 
-coffee_machine float 
-long_term_stays float 
-host_greeting float 
-safety float 
-outdoor_space float 
-hot_tub_sauna_or_pool float 
-room_features float 
-other_facilities float 
-private_entrance float 
-parking float 
-kitchen float 
-elevator float 
-gym float 
-time_since_first_review varchar 
-time_since_last_review varchar  
-avg_rating_overall float  
-avg_rating_overall_cat varchar  
-
 calendar as cal
 -
 listing_id varchar PK FK >- ls.id
@@ -69,7 +15,7 @@ latitude float
 PostalCode varchar
 Borough varchar
 
-summary
+listings as ls
 -
 id varchar PK FK >- ls.id
 host_response_time varchar 

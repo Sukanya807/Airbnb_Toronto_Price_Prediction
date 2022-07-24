@@ -23,6 +23,9 @@ host_response_rate varchar
 host_is_superhost float 
 host_listings_count float 
 host_identity_verified float 
+host_since date
+first_review date
+last_review date
 neighbourhood varchar FK >- nb.neighbourhood
 latitude float  
 longitude float 

@@ -1,77 +1,74 @@
-Listings as ls
+calendar as cal
 -
-listing_id PK int
-host_id FK >- hs.host_id
-name string
-description string
-property_type string
-room_type string
-accommodates int
-bedrooms int
-beds int
-minimum_nights int
-maximum_nights int
-instant_bookable boolean
+listing_id varchar PK FK >- ls.id
+date timestamp 
+available varchar
+price float 
+weekday varchar 
+month varchar
 
-Amenities
+neighbourhood as nb
 -
-listing_id PK FK >- ls.listing_id
-type string
-available boolean
-
-Availability
--
-listing_id PK FK >- ls.listing_id
-has_availability boolean
-availability_30 int
-availability_60 int
-availability_90 int
-availability_365 int
-
-Location
--
-listing_id PK FK >- ls.listing_id
-neighborhood_overview string
-latitude float
+neighbourhood varchar PK
 longitude float
+latitude float
+PostalCode varchar
+Borough varchar
 
-Host as hs
+listings as ls
 -
-host_id PK int
-host_name string
+id varchar PK FK >- ls.id
+host_response_time varchar 
+host_response_rate varchar 
+host_is_superhost float 
+host_listings_count float 
+host_identity_verified float 
 host_since date
-host_location string
-host_about string
-host_response_time string
-host_response_rate int
-host_acceptance_rate int	
-host_is_superhost boolean
-host_thumbnail_url string
-host_picture_url string
-host_neighbourhood string
-host_listings_count string
-host_total_listings_count int
-host_has_profile_pic boolean
-host_identity_verified boolean
-
-Reviews
--
-listing_id PK FK >- ls.listing_id
-number_of_reviews int
-number_of_reviews_ltm int
-number_of_reviews_l30d int
 first_review date
 last_review date
-review_scores_rating float	
-review_scores_accuracy float
-review_scores_cleanliness float
-review_scores_checkin float
-review_scores_communication float	
-review_scores_location float
-review_scores_value float
-
-Price
--
-listing_id PK FK >- ls.listing_id
-date date PK
-price float
+neighbourhood varchar FK >- nb.neighbourhood
+latitude float  
+longitude float 
+property_type varchar 
+room_type varchar 
+accommodates int  
+bedrooms float 
+beds float 
+price float 
+minimum_nights int 
+maximum_nights int 
+availability_90 int 
+number_of_reviews int  
+review_scores_rating float 
+review_scores_accuracy float 
+review_scores_cleanliness float 
+review_scores_checkin float 
+review_scores_communication float 
+review_scores_location float 
+review_scores_value float 
+instant_bookable int 
+host_active_days float 
+toiletries float 
+high_end_electronics float 
+ac_heater float
+internet float 
+bbq float
+home_appliances float 
+coffee_machine float 
+long_term_stays float 
+host_greeting float 
+safety float
+outdoor_space float 
+hot_tub_sauna_or_pool float 
+room_features float 
+other_facilities float 
+private_entrance float 
+parking float 
+kitchen float
+elevator float 
+gym float 
+time_since_first_review varchar 
+time_since_last_review varchar 
+avg_rating_overall float 
+avg_rating_overall_cat varchar  
+borough varchar 

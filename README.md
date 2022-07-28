@@ -214,6 +214,20 @@ This fact gets further corroborated by the analysis done on the calendar.csv.gz 
 - cheap options are available for single person at less than $100 per night.
 - average rental prices are above $200 for number of guests exceeding 4
 
+### 5 Most Expensive Neighbourhoods
+
+![](Resources/images/skg/five_expensive_neighbourhoods.png)
+
+### Observations
+
+The five most expensive neighbourhoods in Toronto are
+
+- Bridle Path-Sunnybrook-York Mills with an average price of $281.
+- Waterfront Communities-The Island with an average price of $ 242.
+- Rustic with an average price of $198.
+- Bay Street Corridor with an average price of $ 197.
+- Niagara with an average price of $196.
+
 
 
 

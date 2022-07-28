@@ -129,19 +129,19 @@ A PostgreSQL database connection has been established using AWS and the cleaned 
 
 ## Data Analysis
 
-#### Airbnb Listings Distribution in Toronto
+### Airbnb Listings Distribution in Toronto
 
 ![](Resources/images/skg/airbnb_map.png)
 
-#### Number of hosts joining Airbnb each month
+### Number of hosts joining Airbnb each month
 
 ![](Resources/images/skg/hosts_joining_airbnb.png)
 
-#### Number of First Reviews
+### Number of First Reviews
 
 ![](Resources/images/skg/review_each_month.png)
 
-##### Observations
+#### Observations
 
 - From the graph, we can see that the number of hosts who joined Airbnb in Toronto was the highest in 2015 and had been more or less steady till 2019. The number has dropped since 2020 onwards. This drop could be an effect of COVID-19 or change in Government laws regarding short-term rentals in Toronto.
 - The seasonality graphs for the number of reviews indicate more reviews during the middle of the year, particularly the summer months when tourism increases. That explains majority of hosts joining Airbnb at the same time of the year.
@@ -154,6 +154,21 @@ This fact gets further corroborated by the analysis done on the calendar.csv.gz 
 ![](Resources/images/skg/price_by_month.png)
 
 ![](Resources/images/skg/price_by_weekday.png)
+
+### Average Number of Listings Per Host
+
+![](Resources/images/skg/avg_listings.png)
+
+![](Resources/images/skg/avg_listings_diag.png)
+
+#### Observations
+
+- The average number of listings per year per host was highest around 2013 when Airbnb started gaining popularity in Canada. After 2013, 2019 was a good year for Airbnb, but the number of listings has again started going down since 2020 which could be attributed to the aftermath of COVID-19.
+- Also, from the host_listings_count, it is clear that like other countries, there are professional Airbnb management companies in Toronto that host a large number of listings under a single host profile.
+
+
+
+
 
 
 

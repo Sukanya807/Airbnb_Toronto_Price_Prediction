@@ -129,6 +129,31 @@ A PostgreSQL database connection has been established using AWS and the cleaned 
 
 ## Data Analysis
 
+#### Airbnb Listings Distribution in Toronto
+
+![](Resources/images/skg/airbnb_map.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Project Overview and Purpose
 

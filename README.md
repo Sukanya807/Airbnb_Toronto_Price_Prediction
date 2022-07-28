@@ -146,7 +146,7 @@ A PostgreSQL database connection has been established using AWS and the cleaned 
 - From the graph, we can see that the number of hosts who joined Airbnb in Toronto was the highest in 2015 and had been more or less steady till 2019. The number has dropped since 2020 onwards. This drop could be an effect of COVID-19 or change in Government laws regarding short-term rentals in Toronto.
 - The seasonality graphs for the number of reviews indicate more reviews during the middle of the year, particularly the summer months when tourism increases. That explains majority of hosts joining Airbnb at the same time of the year.
 
-This fact gets further corroborated by the analysis done on the calendar.csv.gz file. According to the calendar file analysis, we can conclude that :
+This fact gets further corroborated by the analysis done on the calendar.csv.gz file. According to the calendar file analysis, we can conclude that:
 
 - Average nightly prices are the highest in August. This could be due to summer weather in Toronto accompanied by summer holidays in schools.
 - In terms of weekdays, Saturdays command the highest average nightly prices.
@@ -165,6 +165,17 @@ This fact gets further corroborated by the analysis done on the calendar.csv.gz 
 
 - The average number of listings per year per host was highest around 2013 when Airbnb started gaining popularity in Canada. After 2013, 2019 was a good year for Airbnb, but the number of listings has again started going down since 2020 which could be attributed to the aftermath of COVID-19.
 - Also, from the host_listings_count, it is clear that like other countries, there are professional Airbnb management companies in Toronto that host a large number of listings under a single host profile.
+
+### Airbnb Yearly Average Price Change
+
+![](Resources/images/skg/mean_nightly_price.png)
+
+![](Resources/images/skg/mean_nightly_price_diag.png)
+
+#### Observations
+
+- The average price of renting Airbnb has increased steadily since 2010. Particularly, prices have gone up since 2021.
+- Average prices have gone up by 75% in 2022 compared to 2010.
 
 
 

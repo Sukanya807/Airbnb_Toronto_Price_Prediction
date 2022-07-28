@@ -194,6 +194,16 @@ This fact gets further corroborated by the analysis done on the calendar.csv.gz 
 
 - Majority of the hosts are located in Downtown Toronto. It seems to be the most popular location among guests.
 
+### Majority of the Property Types in Toronto
+
+![](Resources/images/skg/majority_property_types.png)
+
+#### Observations
+
+- Most of the property types in Downtown Toronto region are apartments.
+- West Toronto has the highest number of individual home type properties.
+- One room options are mostly available in Downtown Toronto and North York
+
 
 
 

@@ -204,6 +204,16 @@ This fact gets further corroborated by the analysis done on the calendar.csv.gz 
 - West Toronto has the highest number of individual home type properties.
 - One room options are mostly available in Downtown Toronto and North York
 
+### Average Price by the number of people the property accommodates
+
+![](Resources/images/skg/price_vs_accommodates.png)
+
+#### Observations
+
+- properties that can accommodate 14 guests are the costliest.
+- cheap options are available for single person at less than $100 per night.
+- average rental prices are above $200 for number of guests exceeding 4
+
 
 
 

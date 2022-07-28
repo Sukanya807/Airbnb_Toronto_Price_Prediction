@@ -279,6 +279,19 @@ The five least expensive neighbourhoods in Toronto are
 - Around 90% of the Airbnb hosts in Toronto are verified.
 - Hosts with verified identity charge approximately 25% higher prices compared to hosts whose identities are not verified.
 
+### Relationship between price and Instant Booking Priviledges
+
+![](Resources/images/skg/instant_bookable.png)
+
+### Observations
+
+- Around 29% of the Airbnbs in Toronto are instantly bookable.
+- It does not provide any benefits in terms of average nighly prices charged.
+
+### Popular Amenities and their impact on Average Price
+
+![](Resources/images/skg/amenities_1.png)    ![](Resources/images/skg/amenities_2.png)
+
 
 
 

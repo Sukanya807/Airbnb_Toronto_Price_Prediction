@@ -49,7 +49,9 @@ Notebook:
 - Jupyter Notebook
 - Google Colab
 
-## Available Data
+## Entity Relationship Diagram ( ERD)
+
+![](Resources/ images/airbnb_db_erd.png)
 
 - id - Airbnb's unique identifier for the listing
 

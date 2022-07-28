@@ -296,6 +296,38 @@ The five least expensive neighbourhoods in Toronto are
 ![](Resources/images/skg/amenities_4.png)
 ![](Resources/images/skg/amenities_5.png)
 
+### Observations
+
+Most Airbnbs provide amenties like:
+
+- Toiletries - like soap and shampoo
+- high-end electronics - like TV and music systems
+- Air Conditioners and heaters
+- Internet
+- Home Appliances like microwaves, refrigerator,etc
+- Coffee Machines
+- Long term stays
+- Safety equipments like fire alarms
+- Bed linens, pillows and closets
+- Parking Facilities
+- Kitchen
+
+Most Airbnbs charge higher average prices for amenities like:
+
+- Toiletries
+- High-end electronics
+- Air conditioning and heating
+- BBQ facilities
+- Home Appliances and coffee machines with kitchen
+- Safety features
+- Outdoor Space and hot-tubs or pools
+- Parking, elevators and gyms
+
+### Additional Observations
+
+- There is not much difference in price for providing Internet.
+- Places allowing long term stays and host greetings have lower rent prices per night.
+
 
 
 

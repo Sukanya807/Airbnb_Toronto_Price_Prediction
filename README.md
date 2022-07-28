@@ -1,6 +1,132 @@
 # Capstone_Project_Group_01
 
-![Untitled design (7)](https://user-images.githubusercontent.com/100486461/179129676-dd07e65c-6cae-4643-9e7a-96702fd7aa43.png)
+![](images/AirBnB_Feature-Image3.jpg)
+
+## Introduction
+
+Airbnb is an American company that operates an online community marketplace for people to list, discover, and book accommodations worldwide. Home-owners (also known as 'hosts') are allowed to rent their properties (also known as 'listings') ranging from entire homes, apartments, single or shared bedrooms to individuals or businesses for a charge. 
+
+## Business Problem
+
+**" How much money is your place worth as a short-term rental on Airbnb? "**
+
+Although Airbnb provides the host with a general tip regarding the default nightly price of their property upon listing, the final decision regarding the property price ultimately rests with the host. Paid third party pricing softwares are available, however the hosts are required to first determine the average price by themselves. The algorithm will then vary the daily price around the base price each day depending on several factors such as seasonality, day of the week, etc. In today's dynamic market, it is extremely important for the Airbnb owners to get the pricing right, particularly in big cities like Toronto, where there is stiff competition and a very thin line between success and failure.
+
+## Our Goal
+
+The average nightly price of Airbnbs in a city like Toronto can be influenced by multiple factors such as the type of property, number of people it accommodates, the amenties included, the neighbourhood where it is located, etc. This project aims to help the Airbnb hosts decide the average nightly price for their properties and maximize their earnings by using machine learning regression techniques that can accurately predict the base prices.
+
+## Data Overview
+
+The datasets used for this project are sourced from [Inside Airbnb](http://insideairbnb.com/). This site is not associated with or endorsed by Airbnb or any of its competitors. The data utilizes public information compiled from the Airbnb website. No "private" information has been used. The datasets used for this project are recent and was scraped on June 05,2022 and contains all the information on Toronto Airbnb listings that were active as on that date.
+
+We have used the following datasets from the Inside Airbnb website :
+
+- listings.csv.gz
+- calendar.csv.gz
+- neighbourhoods.geojson
+
+Additionally, we have scraped data from [Wikipedia](https://en.wikipedia.org/wiki/List_of_postal_codes_of_Canada:_M) to extract the Toronto Borough names for the purpose of our analysis.
+
+## Tools Used
+
+For this project we have used the following tools and technologies:
+
+Analysis:
+- Python (Pandas, Numpy, Matplotlib, Seaborn)
+
+Database:
+- PostgreSQL and Amazon Web Services
+
+Visualization:
+- Python
+- Tableau
+
+Machine Learning:
+- XGBoost Regression Model (Scikit-learn)
+
+Notebook:
+- Jupyter Notebook
+- Google Colab
+
+## Available Data
+
+- id - Airbnb's unique identifier for the listing
+
+- host_since - the date host/user was created
+
+- host_response_time - time taken for host to respond
+
+- host_response_rate - the rate at which a host accepts booking requests
+
+- host_is_superhost - whether a host is superhost or not
+
+- host_listings_count - the number of listings the host has
+
+- host_identity_verified - whether the host is verfied or not
+
+- neighbourhood_cleansed - the neighbourhood as geocoded using the latitude and longitude against neighbourhoods as defined by open or digital public shapefiles
+
+- latitude - uses the World Geodetic System (WGS84) projection for latitude and longitude.
+
+- longitude - uses the World Geodetic System (WGS84) projection for latitude and longitude.
+
+- property_type - self selected property type. Hotels and Bed and Breakfasts are described as such by their hosts in this field
+
+- room_type - entire place, private room, shared room
+
+- accommodates - the maximum capacity of the listing
+
+- bathrooms - the number of bathrooms in the listing
+
+- bedrooms - the number of bedrooms
+
+- beds - the number of bed(s)
+
+- amenities - amenties included with the property
+
+- price - daily price in local currency
+
+- minimum_nights - minimum number of night stay for the listing (calendar rules may be different)
+
+- maximum_nights - maximum number of night stay for the listing (calendar rules may be different)
+
+- availability_90 - the availability of the listing x days in the future as determined by the calendar. Note a listing may not be available because it has been booked by a guest or blocked by the host.
+
+- number_of_reviews - the number of reviews the listing has
+
+- number_of_reviews_ltm - the number of reviews the listing has (in the last 12 months)
+
+- first_review - the date of the first/oldest review
+
+- last_review - the date of the last/newest review
+
+- review_scores_rating - rating score
+
+- review_scores_accuracy - accuracy score
+
+- review_scores_cleanliness -cleanliness score
+
+- review_scores_checkin - checkin score
+
+- review_scores_communication - communication score
+
+- review_scores_location - location score
+
+- review_scores_value - value score
+
+- instant_bookable - whether the guest can automatically book the listing without the host requiring to accept the booking decision
+
+## Database Model
+
+![](images/ETL_diagram.png)
+
+Our raw data files are saved as S3 buckets in Amazon Web services.
+
+A PostgreSQL database connection has been established using AWS and the cleaned data along with other dataframes have been stored in the database.
+
+## Data Analysis
+
 
 # Project Overview and Purpose
 

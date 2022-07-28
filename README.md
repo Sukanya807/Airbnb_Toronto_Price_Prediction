@@ -270,6 +270,15 @@ The five least expensive neighbourhoods in Toronto are
 - Around 25% of the Airbnb hosts are superhosts
 - However, being a superhost does not seem to have a significant impact on average price charged per night.
 
+### Is there significant relationship between price and verified host identity?
+
+![](Resources/images/skg/host_identity_verified.png)
+
+### Observations
+
+- Around 90% of the Airbnb hosts in Toronto are verified.
+- Hosts with verified identity charge approximately 25% higher prices compared to hosts whose identities are not verified.
+
 
 
 

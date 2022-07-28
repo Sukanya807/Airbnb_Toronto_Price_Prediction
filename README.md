@@ -1,6 +1,6 @@
 # Capstone_Project_Group_01
 
-![](images/AirBnB_Feature-Image3.jpg)
+![](Resources/images/AirBnB_Feature-Image3.jpg)
 
 ## Introduction
 

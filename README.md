@@ -252,6 +252,15 @@ The five least expensive neighbourhoods in Toronto are
 - There is a huge difference between the minimum and maximum prices in all boroughs.
 - Minimum prices can be less than $50 while maximum prices can go beyond $800.
 
+### How much difference does the ratings make in terms of price?
+
+![](Resources/images/skg/price_vs_overall_ratings.png)
+
+### Observations
+
+- Properties with Excellent Ratings can charge 8.4% higher prices than properties with Average Ratings.
+- Properties with Excellent Ratings can charge 13% higher prices on an average compared to properties with Poor Ratings.
+
 
 
 

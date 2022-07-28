@@ -133,6 +133,21 @@ A PostgreSQL database connection has been established using AWS and the cleaned 
 
 ![](Resources/images/skg/airbnb_map.png)
 
+#### Number of hosts joining Airbnb each month
+
+![](Resources/images/skg/hosts_joining_airbnb.png)
+
+#### Number of First Reviews
+
+![](Resources/images/skg/review_each_month.png)
+
+##### Observations
+
+- From the graph, we can see that the number of hosts who joined Airbnb in Toronto was the highest in 2015 and had been more or less steady till 2019. The number has dropped since 2020 onwards. This drop could be an effect of COVID-19 or change in Government laws regarding short-term rentals in Toronto.
+- The seasonality graphs for the number of reviews indicate more reviews during the middle of the year, particularly the summer months when tourism increases. That explains majority of hosts joining Airbnb at the same time of the year.
+
+
+
 
 
 

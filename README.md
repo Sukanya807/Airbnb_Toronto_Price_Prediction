@@ -177,6 +177,16 @@ This fact gets further corroborated by the analysis done on the calendar.csv.gz 
 - The average price of renting Airbnb has increased steadily since 2010. Particularly, prices have gone up since 2021.
 - Average prices have gone up by 75% in 2022 compared to 2010.
 
+### Average Price by location for different property types
+
+![](Resources/images/skg/avg_price_boroughs.png)
+
+#### Observations
+
+- Renting an entire home is the most expensive in all boroughs followed by renting an entire apartment.
+- Except Downtown Toronto, one rooms and shared rooms can be rented at less than $100 CAD.
+
+
 
 
 

@@ -121,7 +121,7 @@ Notebook:
 
 ## Database Model
 
-![](images/ETL_diagram.png)
+![](Resources/images/etl_pipeline_project.png)
 
 Our raw data files are saved as S3 buckets in Amazon Web services.
 

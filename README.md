@@ -146,6 +146,15 @@ A PostgreSQL database connection has been established using AWS and the cleaned 
 - From the graph, we can see that the number of hosts who joined Airbnb in Toronto was the highest in 2015 and had been more or less steady till 2019. The number has dropped since 2020 onwards. This drop could be an effect of COVID-19 or change in Government laws regarding short-term rentals in Toronto.
 - The seasonality graphs for the number of reviews indicate more reviews during the middle of the year, particularly the summer months when tourism increases. That explains majority of hosts joining Airbnb at the same time of the year.
 
+This fact gets further corroborated by the analysis done on the calendar.csv.gz file. According to the calendar file analysis, we can conclude that :
+
+- Average nightly prices are the highest in August. This could be due to summer weather in Toronto accompanied by summer holidays in schools.
+- In terms of weekdays, Saturdays command the highest average nightly prices.
+
+![](Resources/images/skg/price_by_month.png)
+
+![](Resources/images/skg/price_by_weekday.png)
+
 
 
 

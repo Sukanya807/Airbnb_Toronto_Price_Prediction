@@ -261,6 +261,15 @@ The five least expensive neighbourhoods in Toronto are
 - Properties with Excellent Ratings can charge 8.4% higher prices than properties with Average Ratings.
 - Properties with Excellent Ratings can charge 13% higher prices on an average compared to properties with Poor Ratings.
 
+### Does Being a SuperHost have an impact on price?
+
+![](Resources/images/skg/host_is_superhost.png)
+
+### Observations
+
+- Around 25% of the Airbnb hosts are superhosts
+- However, being a superhost does not seem to have a significant impact on average price charged per night.
+
 
 
 

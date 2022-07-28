@@ -228,6 +228,20 @@ The five most expensive neighbourhoods in Toronto are
 - Bay Street Corridor with an average price of $ 197.
 - Niagara with an average price of $196.
 
+### 5 Least Expensive Neighbourhoods
+
+![](Resources/images/skg/least_expensive_neighbourhoods.png)
+
+### Observations
+
+The five least expensive neighbourhoods in Toronto are
+
+- Black Creek with an average price of $45.
+- Eglinton East with an average price of $60.
+- West Hill with an average price of $64.
+- Glenfield-Jane Heights with an average price of $65.
+- Pleasant View with an average price of $69.
+
 
 
 

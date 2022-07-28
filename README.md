@@ -186,6 +186,14 @@ This fact gets further corroborated by the analysis done on the calendar.csv.gz 
 - Renting an entire home is the most expensive in all boroughs followed by renting an entire apartment.
 - Except Downtown Toronto, one rooms and shared rooms can be rented at less than $100 CAD.
 
+### Location of Majority of Airbnb Hosts
+
+![](Resources/images/skg/majority_host_location.png)
+
+#### Observations
+
+- Majority of the hosts are located in Downtown Toronto. It seems to be the most popular location among guests.
+
 
 
 

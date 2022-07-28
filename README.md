@@ -242,6 +242,16 @@ The five least expensive neighbourhoods in Toronto are
 - Glenfield-Jane Heights with an average price of $65.
 - Pleasant View with an average price of $69.
 
+### Maximum and Minimum Price by Borough
+
+![](Resources/images/skg/max_min_price_borough.png)
+
+### Observations
+
+- East YorkEast Toronto region seems to be the cheapest of all boroughs with a maximum price of approximately $500.
+- There is a huge difference between the minimum and maximum prices in all boroughs.
+- Minimum prices can be less than $50 while maximum prices can go beyond $800.
+
 
 
 

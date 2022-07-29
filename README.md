@@ -369,6 +369,9 @@ After hyper-parameter tuning using the GridSearchCV method, we achieved an RMSE 
 
 ## Summary
 
+- summer is the best time for Airbnb business in Toronto.
+- Average prices are highest in August and the most expensive day of the week is Saturday.
+
 
 
 

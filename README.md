@@ -386,6 +386,7 @@ After hyper-parameter tuning using the GridSearchCV method, we achieved an RMSE 
 - Minimum prices can be less than $50 while maximum prices can go beyond $800.
 - Majority of the Airbnbs in Toronto are located in the Downtown region.
 - Majority of the Airbnb properties in Toronto are apartments.
+- Almost 70% of the guests prefer renting an entire home or apartment 
 - Average price for renting an entire home/ apartment is $180 , private room is $80, shared room is $70 and hotel room is $60.
 - Airbnb hosts can charge minimum $200 CAD for renting an entire home in majority locations in Toronto.
 - Renting an entire apartment in Downtown Toronto can cost around $200 CAD on an average. 

@@ -380,8 +380,12 @@ After hyper-parameter tuning using the GridSearchCV method, we achieved an RMSE 
 -  East YorkEast Toronto region seems to be the cheapest of all boroughs with a maximum price of approximately $500.
 - For single guests, many one room options are available in the Downtown region and North York. Many cheap options are available at less than $100 per night.
 - Average nightly price is minimum $200 CAD for number of guests exceeding 4 but approximately $550 for 14 guests.
--
-- 
+- Properties with "Excellent" Ratings can charge significantly higher prices.
+- Being a superhost does not seem to have a significant impact on average price charged per night.
+- Hosts with verified identity charge approximately 25% higher prices compared to hosts whose identities are not verified.
+- Instant Booking priviledges does not provide any benefits in terms of average nighly prices charged.
+- Places allowing long term stays and host greetings have lower rent prices per night.
+- Airbnbs can charge higher prices for certain amenities like high-end electronics, home appliances, pools or hot-tubs, bbq facilities, parking, elevator, gyms,etc.
 
 
 

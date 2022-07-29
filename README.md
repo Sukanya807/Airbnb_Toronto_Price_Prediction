@@ -204,6 +204,17 @@ This fact gets further corroborated by the analysis done on the calendar.csv.gz 
 - West Toronto has the highest number of individual home type properties.
 - One room options are mostly available in Downtown Toronto and North York
 
+### Average Price by Room Type
+
+![](Resources/images/skg/price_by_room.png)
+
+#### Observations
+
+- The average price for renting an entire home/ apartment is approximately $180 CAD.
+- The average price for renting a hotel room is approximately $60 CAD.
+- The average price for renting a private room is approximately $80 CAD.
+- The average price for renting a shared room is approximately $70 CAD.
+
 ### Average Price by the number of people the property accommodates
 
 ![](Resources/images/skg/price_vs_accommodates.png)

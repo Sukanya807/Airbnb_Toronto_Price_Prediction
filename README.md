@@ -406,6 +406,16 @@ After hyper-parameter tuning using the GridSearchCV method, we achieved an RMSE 
 
 Our best performing machine learning model was only able to explain 76% of the variation in price. The remaining 24% could be made of other features that were not present in our data like points of interests near the property, the property's proximity to restaurants, cafes,etc. We have not performed Natural Language Processing or Sentiment Analysis on this dataset. Perhaps a more detailed analysis of the reviews column could also improve the predictions. Finally, we believe that incorporating image quality into the machine learning model can also be helpful since photos of the properties on Airbnb websites can have a major impact on guests and can command higher prices as well.
 
+## Acknowledgements
+
+We would like to thank University of Toronto, our instructor Hassan Ahmed and all our Teaching Instructors for their unconditional support throughout the bootcamp course.
+
+Contributors :
+
+- Caroline Semerano
+- Sukanya Ghosh
+- Yesha Tharwala
+
 
 
 

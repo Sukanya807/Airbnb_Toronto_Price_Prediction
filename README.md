@@ -391,6 +391,8 @@ After hyper-parameter tuning using the GridSearchCV method, we achieved an RMSE 
 - Airbnb hosts can charge minimum $200 CAD for renting an entire home in majority locations in Toronto.
 - Renting an entire apartment in Downtown Toronto can cost around $200 CAD on an average. 
 -  East YorkEast Toronto region seems to be the cheapest of all boroughs with a maximum price of approximately $500.
+-  Bridle Path-Sunnybrook-York Mills,Waterfront Communities-The Island, Rustic, Bay Street Corridor and Niagara are the five most expensive neighbourhoods.
+-  Black Creek, Eglinton East, West Hill, Glenfield-Jane Heights, Pleasant View are the five least expensive neighbourhoods.
 - For single guests, many one room options are available in the Downtown region and North York. Many cheap options are available at less than $100 per night.
 - Average nightly price is minimum $200 CAD for number of guests exceeding 4 but approximately $550 for 14 guests.
 - Properties with "Excellent" Ratings can charge significantly higher prices.

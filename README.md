@@ -1,4 +1,4 @@
-# Capstone_Project_Group_01
+# Airbnb Toronto Capstone Project
 
 ![](Resources/images/AirBnB_Feature-Image3.jpg)
 

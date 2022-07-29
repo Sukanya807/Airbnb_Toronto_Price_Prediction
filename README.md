@@ -328,6 +328,28 @@ Most Airbnbs charge higher average prices for amenities like:
 - There is not much difference in price for providing Internet.
 - Places allowing long term stays and host greetings have lower rent prices per night.
 
+## Machine Learning for Price Predictions
+
+We have tried different machine learning regression models on the clean data to predict prices as accurately as possible. All columns with high correlation were removed and the numeric columns have been log transformed to reduce skewness as much as possible. Then the data has been scaled using a Standard Scaler for consistency.
+
+![](Resources/images/skg/corr.png)
+
+### Different Models Tried:
+
+- Linear Regression Model - RMSE test: 0.393 , R^2 test: 0.682
+- Support Vector Regression Model - RMSE test: 0.394, R^2 test: 0.681
+- GradientBoostingRegressor Model - RMSE test: 0.363, R^2 test: 0.728
+- RandomForestRegressor Model - RMSE test: 0.357, R^2 test: 0.738
+- ExtraTreesRegressor Model - RMSE test: 0.362, R^2 test: 0.730
+- XGBoostRegressor Model - RMSE test: 0.347, R^2 test: 0.753
+
+Based on a rule of thumb, it can be said that RMSE (Root Mean Square Error) values between 0.2 and 0.5 shows that the model can relatively predict the data accurately. With our XGBoost Regressor model, we have been able to achieve a RMSE training score of 0.265 and a RMSE testing score of 0.347 along with a R² score of 75.3% which indicates that 75.3% of the variation in Airbnb nightly prices can be attributed to factors such as superhost, verified host identity, host listings count, amenities, neighbourhood, host response, etc.
+
+![](Resources/images/skg/xgboost_regressor.png)
+
+
+
+
 
 
 

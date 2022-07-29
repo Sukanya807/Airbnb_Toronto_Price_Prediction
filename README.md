@@ -367,6 +367,8 @@ After hyper-parameter tuning using the GridSearchCV method, we achieved an RMSE 
 
 ![](Resources/images/skg/feature_imp.png)
 
+## Summary
+
 
 
 

@@ -371,6 +371,17 @@ After hyper-parameter tuning using the GridSearchCV method, we achieved an RMSE 
 
 - summer is the best time for Airbnb business in Toronto.
 - Average prices are highest in August and the most expensive day of the week is Saturday.
+- Average nightly prices have increased by 7% in 2022 compared to 2021.
+- Minimum prices can be less than $50 while maximum prices can go beyond $800.
+- Majority of the Airbnbs in Toronto are located in the Downtown region.
+- Majority of the Airbnb properties in Toronto are apartments.
+- Airbnb hosts can charge minimum $200 CAD for renting an entire home in majority locations in Toronto.
+- Renting an entire apartment in Downtown Toronto can cost around $200 CAD on an average. 
+-  East YorkEast Toronto region seems to be the cheapest of all boroughs with a maximum price of approximately $500.
+- For single guests, many one room options are available in the Downtown region and North York. Many cheap options are available at less than $100 per night.
+- Average nightly price is minimum $200 CAD for number of guests exceeding 4 but approximately $550 for 14 guests.
+-
+- 
 
 
 

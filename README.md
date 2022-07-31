@@ -49,7 +49,7 @@ Notebook:
 - Jupyter Notebook
 - Google Colab
 
-## Entity Relationship Diagram ( ERD)
+## Entity Relationship Diagram (ERD)
 
 ![](Resources/images/airbnb_db_erd.png)
 
@@ -125,7 +125,7 @@ Notebook:
 
 Our raw data files are saved as S3 buckets in Amazon Web services.
 
-A PostgreSQL database connection has been established using AWS and the cleaned data along with other dataframes have been stored in the database.
+A PostgreSQL database connection has been established using AWS and the cleaned data along with other dataframes have been stored in the database. Evidences of database creation and loading can be found on [Resources/images/database](Resources/images/database/)
 
 ## Data Analysis
 

@@ -206,7 +206,7 @@ This fact gets further corroborated by the analysis done on the calendar.csv.gz 
 
 ### Average Price by Room Type
 
-![](Resources/images/skg/price_by_room.png)
+![](Resources/images/skg/avg_price_room.png.png)
 
 #### Observations
 

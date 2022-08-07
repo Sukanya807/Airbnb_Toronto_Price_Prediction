@@ -44,6 +44,7 @@ Visualization:
 
 Machine Learning:
 - XGBoost Regression Model (Scikit-learn) 
+- GridSearch CV hyper-parameter tuning
 
 Notebook:
 - Jupyter Notebook

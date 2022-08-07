@@ -273,7 +273,7 @@ The five least expensive neighbourhoods in Toronto are
 
 ### Popular Amenities and their impact on Average Price
 
-1[](Resources/images/tableau_img/amenities_by_borough.png)
+![](Resources/images/tableau_img/amenities_by_borough.png)
 ![](Resources/images/skg/amenities_1.png)    
 ![](Resources/images/skg/amenities_2.png)
 ![](Resources/images/skg/amenities_3.png)

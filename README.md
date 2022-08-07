@@ -36,18 +36,21 @@ Analysis:
 - Python (Pandas, Numpy, Matplotlib, Seaborn)
 
 Database:
-- PostgreSQL and Amazon Web Services 
+- PostgreSQL and Amazon Web Services [Images Here](https://github.com/Sukanya807/Capstone_Project_Group_01/tree/main/Resources/images/database)
 
 Visualization:
 - Python
-- Tableau
+- Tableau [Dashboard Link Here](https://public.tableau.com/app/profile/yesha4974/viz/FinalDashboard2_16597388198810/Story42)
 
 Machine Learning:
-- XGBoost Regression Model (Scikit-learn)
+- XGBoost Regression Model (Scikit-learn) 
 
 Notebook:
 - Jupyter Notebook
 - Google Colab
+- [Data Cleaning Notebook](https://github.com/Sukanya807/Capstone_Project_Group_01/blob/main/ETL/airbnb_ETL.ipynb)
+- [Exploratory Data Analysis Notebook](https://github.com/Sukanya807/Capstone_Project_Group_01/blob/main/ETL/airbnb_ETL.ipynb)
+- [Machine Learning Notebook](https://github.com/Sukanya807/Capstone_Project_Group_01/blob/main/ML/Machine_Learning.ipynb)
 
 ## Entity Relationship Diagram (ERD)
 
@@ -118,14 +121,6 @@ Notebook:
 - review_scores_value - value score
 
 - instant_bookable - whether the guest can automatically book the listing without the host requiring to accept the booking decision
-
-## Database Model
-
-![](Resources/images/etl_pipeline_project.png)
-
-Our raw data files are saved as S3 buckets in Amazon Web services.
-
-A PostgreSQL database connection has been established using AWS and the cleaned data along with other dataframes have been stored in the database. Evidences of database creation and loading can be found on [Resources/images/database](Resources/images/database/)
 
 ## Data Analysis
 

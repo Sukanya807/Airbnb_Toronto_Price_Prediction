@@ -59,6 +59,9 @@ Notebook:
 2. [Exploratory Data Analysis Notebook](https://github.com/Sukanya807/Capstone_Project_Group_01/blob/main/ETL/airbnb_ETL.ipynb)
 3. [Machine Learning Notebook](https://github.com/Sukanya807/Capstone_Project_Group_01/blob/main/ML/Machine_Learning.ipynb)
 
+Final Presentation:
+- Google Slides [Presentation](https://docs.google.com/presentation/d/1PVYpfuQDHAVlcRUiRHicie7Rb_gDXNRQnftlESyNGtI/edit#slide=id.g13e49e38caa_0_189)
+
 ## Data Overview
 
 ![](Resources/images/airbnb_db_erd.png)
@@ -359,6 +362,14 @@ As per the XGBoost model, the most important features for Airbnb price predictio
 - accommodates
 - bathroom
 - host response rate
+
+## WebApp with Flask and HTML
+
+The final machine learning model has been exported using the xgboost library and a webapp has been created using HTML and Flask that can be used by potential Airbnb hosts to predict nightly prices for their listings.
+
+![](Resources/images/app/app_form.png)
+
+![](Resources/images/app/aap_result.png)
 
 
 ## Conclusion

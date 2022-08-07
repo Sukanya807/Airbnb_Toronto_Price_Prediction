@@ -175,7 +175,7 @@ This fact gets further corroborated by the analysis done on the calendar.csv.gz 
 
 ### Average Price by location for different property types
 
-![](Resources/images/skg/avg_price_boroughs.png)
+![](Resources/images/tableau_img/avg_price_borough.png)
 
 #### Observations
 

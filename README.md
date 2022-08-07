@@ -337,7 +337,7 @@ We have further tried to improve our model through hyper-parameter tuning using 
 
 ##### GridSearchCV Results
 
-1[](Resources/images/tableau_img/XGBoost_HyperParameter.png)
+![](Resources/images/tableau_img/XGBoost_HyperParameter.png)
 
 After hyper-parameter tuning using the GridSearchCV method, we achieved an RMSE testing score of 67.4 with a R² score of 0.676.
 

@@ -178,6 +178,7 @@ This fact gets further corroborated by the analysis done on the calendar.csv.gz 
 #### Observations
 
 - Renting an entire home is the most expensive in all boroughs followed by renting an entire apartment.
+- Both entire homes and apartments cost $200 and above in Downtown Toronto region.
 - Except Downtown Toronto, one rooms and shared rooms can be rented at less than $100 CAD.
 
 ### Location of Majority of Airbnb Hosts and Number of Reviews

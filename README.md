@@ -47,7 +47,7 @@ Machine Learning:
 - GridSearch CV hyper-parameter tuning
 
 Web App:
-- HTML [Index](https://github.com/Sukanya807/Airbnb_Toronto_Price_Prediction/blob/main/app/templates/index.html
+- HTML [Index](https://github.com/Sukanya807/Airbnb_Toronto_Price_Prediction/blob/main/app/templates/index.html)
 - HTML [Result](https://github.com/Sukanya807/Airbnb_Toronto_Price_Prediction/blob/main/app/templates/result.html)
 - CSS [Styling](https://github.com/Sukanya807/Airbnb_Toronto_Price_Prediction/blob/main/app/templates/static/css/style.css)
 

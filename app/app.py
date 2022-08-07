@@ -143,7 +143,7 @@ def home():
 
         prediction = model.predict(data_df)
 
-        prediction_text = 'Your property should be listed for $ ' + str(int(prediction[0]))
+        prediction_text = (f'<div class="alert alert-primary" role="alert">Your property should be listed for $ {str(int(prediction[0]))}</div>')
 
         return prediction_text
     return render_template('index.html')

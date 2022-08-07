@@ -34,19 +34,20 @@
                                 <li class="list-group-item">
                                     <select class="form-select" aria-label="Default select example" name="host_since">
                                         <option selected>Host Since</option>
-                                        <option value="Less than 1 year">Less than 1 year</option>
-                                        <option value="1-2 years">1-2 years</option>
+                                        <option value="less than 3 years">less than 3 years</option>
                                         <option value="3-5 years">3-5 years</option>
-                                        <option value="More than 5 years">More than 5 years</option>
+                                        <option value="5-8 years">5-8 years</option>
+                                        <option value="8-10 years">8-10 years</option>
+                                        <option value="more than 10 years">More than 10 years</option>
                                     </select>
                                 </li>
                                 <li class="list-group-item">
                                     <select class="form-select" aria-label="Default select example" name="host_response_time">
                                         <option selected>Host Response Time</option>
-                                        <option value="Within an hour">Within an hour</option>
-                                        <option value="Within a few hours">Within a few hours</option>
-                                        <option value="Within a day">Within a day</option>
-                                        <option value="A few days or more">A few days or more</option>
+                                        <option value="Within an hour">within an hour</option>
+                                        <option value="Within a few hours">within a few hours</option>
+                                        <option value="Within a day">within a day</option>
+                                        <option value="A few days or more">a few days or more</option>
                                     </select>
                                 </li>
                                 <li class="list-group-item">
@@ -87,16 +88,163 @@
                             <h3>Location</h3>
                             <ul class="list-group">
                                 <li class="list-group-item">
-                                    <label for="neighbourhood">Neighbourhood</label>
-                                    <input type="text" placeholder="" name="neighbourhood" />
+                                    <select class="form-select" aria-label="Default select example" name="neighbourhood">
+                                        <option selected>Neighbourhood</option>
+                                        <option value='Bendale'>Bendale</option>
+                                        <option value='South Parkdale'>South Parkdale</option>
+                                        <option value='Woodbine-Lumsden'>Woodbine-Lumsden</option>
+                                        <option value='Junction Area'>Junction Area</option>
+                                        <option value='Pelmo Park-Humberlea'>Pelmo Park-Humberlea</option>
+                                        <option value='Guildwood'>Guildwood</option>
+                                        <option value='Morningside'>Morningside</option>
+                                        <option value='Brookhaven-Amesbury'>Brookhaven-Amesbury</option>
+                                        <option value='Wexford/Maryvale'>Wexford/Maryvale</option>
+                                        <option value='Bedford Park-Nortown'>Bedford Park-Nortown</option>
+                                        <option value='Oakwood Village'>Oakwood Village</option>
+                                        <option value='Hillcrest Village'>Hillcrest Village</option>
+                                        <option value='Eringate-Centennial-West Deane'>Eringate-Centennial-West Deane</option>
+                                        <option value='Casa Loma'>Casa Loma</option>
+                                        <option value='Leaside-Bennington'>Leaside-Bennington</option>
+                                        <option value='High Park North'>High Park North</option>
+                                        <option value='Kennedy Park'>Kennedy Park</option>
+                                        <option value='Pleasant View'>Pleasant View</option>
+                                        <option value='Clanton Park'>Clanton Park</option>
+                                        <option value='Maple Leaf'>Maple Leaf</option>
+                                        <option value='North St.James Town'>North St.James Town</option>
+                                        <option value='University'>University</option>
+                                        <option value='Rockcliffe-Smythe'>Rockcliffe-Smythe</option>
+                                        <option value='Humbermede'>Humbermede</option>
+                                        <option value='Steeles'>Steeles</option>
+                                        <option value='Islington-City Centre West'>Islington-City Centre West</option>
+                                        <option value='Forest Hill North'>Forest Hill North</option>
+                                        <option value='Rustic'>Rustic</option>
+                                        <option value='Lawrence Park South'>Lawrence Park South</option>
+                                        <option value='Danforth East York'>Danforth East York</option>
+                                        <option value='Cabbagetown-South St.James Town'>Cabbagetown-South St.James Town</option>
+                                        <option value='Woburn'>Woburn</option>
+                                        <option value='North Riverdale'>North Riverdale</option>
+                                        <option value='Newtonbrook West'>Newtonbrook West</option>
+                                        <option value='Bathurst Manor'>Bathurst Manor</option>
+                                        <option value='Mimico (includes Humber Bay Shores)'>Mimico (includes Humber Bay Shores)</option>
+                                        <option value='Runnymede-Bloor West Village'>Runnymede-Bloor West Village</option>
+                                        <option value='Lansing-Westgate'>Lansing-Westgate</option>
+                                        <option value='Church-Yonge Corridor'>Church-Yonge Corridor</option>
+                                        <option value='Don Valley Village'>Don Valley Village</option>
+                                        <option value='Dorset Park'>Dorset Park</option>
+                                        <option value='Elms-Old Rexdale'>Elms-Old Rexdale</option>
+                                        <option value="L'Amoreaux">L'Amoreaux</option>
+                                        <option value='Annex'>Annex</option>
+                                        <option value='Clairlea-Birchmount'>Clairlea-Birchmount</option>
+                                        <option value='Playter Estates-Danforth'>Playter Estates-Danforth</option>
+                                        <option value='Roncesvalles'>Roncesvalles</option>
+                                        <option value='Parkwoods-Donalda'>Parkwoods-Donalda</option>
+                                        <option value='Dovercourt-Wallace Emerson-Junction'>Dovercourt-Wallace Emerson-Junction</option>
+                                        <option value='New Toronto'>New Toronto</option>
+                                        <option value='East End-Danforth'>East End-Danforth</option>
+                                        <option value='Alderwood'>Alderwood</option>
+                                        <option value='Downsview-Roding-CFB'>Downsview-Roding-CFB</option>
+                                        <option value='Victoria Village'>Victoria Village</option>
+                                        <option value='Danforth'>Danforth</option>
+                                        <option value='Englemount-Lawrence'>Englemount-Lawrence</option>
+                                        <option value='Corso Italia-Davenport'>Corso Italia-Davenport</option>
+                                        <option value='Mount Pleasant West'>Mount Pleasant West</option>
+                                        <option value='Agincourt North'>Agincourt North</option>
+                                        <option value='Rosedale-Moore Park'>Rosedale-Moore Park</option>
+                                        <option value='Willowdale West'>Willowdale West</option>
+                                        <option value='Mount Dennis'>Mount Dennis</option>
+                                        <option value='Taylor-Massey'>Taylor-Massey</option>
+                                        <option value='Weston'>Weston</option>
+                                        <option value='Dufferin Grove'>Dufferin Grove</option>
+                                        <option value='Birchcliffe-Cliffside'>Birchcliffe-Cliffside</option>
+                                        <option value='Long Branch'>Long Branch</option>
+                                        <option value='Oakridge'>Oakridge</option>
+                                        <option value='Keelesdale-Eglinton West'>Keelesdale-Eglinton West</option>
+                                        <option value='Yorkdale-Glen Park'>Yorkdale-Glen Park</option>
+                                        <option value='Humber Summit'>Humber Summit</option>
+                                        <option value='Humewood-Cedarvale'>Humewood-Cedarvale</option>
+                                        <option value='South Riverdale'>South Riverdale</option>
+                                        <option value='Agincourt South-Malvern West'>Agincourt South-Malvern West</option>
+                                        <option value='Flemingdon Park'>Flemingdon Park</option>
+                                        <option value='Lawrence Park North'>Lawrence Park North</option>
+                                        <option value='High Park-Swansea'>High Park-Swansea</option>
+                                        <option value='Kingsway South'>Kingsway South</option>
+                                        <option value='Trinity-Bellwoods'>Trinity-Bellwoods</option>
+                                        <option value='Rexdale-Kipling'>Rexdale-Kipling</option>
+                                        <option value='St.Andrew-Windfields'>St.Andrew-Windfields</option>
+                                        <option value='Thistletown-Beaumond Heights'>Thistletown-Beaumond Heights</option>
+                                        <option value='Glenfield-Jane Heights'>Glenfield-Jane Heights</option>
+                                        <option value='Black Creek'>Black Creek</option>
+                                        <option value='Niagara'>Niagara</option>
+                                        <option value='Caledonia-Fairbank'>Caledonia-Fairbank</option>
+                                        <option value='Eglinton East'>Eglinton East</option>
+                                        <option value='Cliffcrest'>Cliffcrest</option>
+                                        <option value='Willowridge-Martingrove-Richview'>Willowridge-Martingrove-Richview</option>
+                                        <option value='Yonge-St.Clair'>Yonge-St.Clair</option>
+                                        <option value="O'Connor-Parkview">O'Connor-Parkview</option>
+                                        <option value='Bridle Path-Sunnybrook-York Mills'>Bridle Path-Sunnybrook-York Mills</option>
+                                        <option value='Old East York'>Old East York</option>
+                                        <option value='Beechborough-Greenbrook'>Beechborough-Greenbrook</option>
+                                        <option value='Highland Creek'>Highland Creek</option>
+                                        <option value='Edenbridge-Humber Valley'>Edenbridge-Humber Valley</option>
+                                        <option value='Kingsview Village-The Westway'>Kingsview Village-The Westway</option>
+                                        <option value='Westminster-Branson'>Westminster-Branson</option>
+                                        <option value='Scarborough Village'>Scarborough Village</option>
+                                        <option value='Milliken'>Milliken</option>
+                                        <option value='Moss Park'>Moss Park</option>
+                                        <option value='Bay Street Corridor'>Bay Street Corridor</option>
+                                        <option value='Palmerston-Little Italy'>Palmerston-Little Italy</option>
+                                        <option value='Waterfront Communities-The Island'>Waterfront Communities-The Island</option>
+                                        <option value='Regent Park'>Regent Park</option>
+                                        <option value='Humber Heights-Westmount'>Humber Heights-Westmount</option>
+                                        <option value='Etobicoke West Mall'>Etobicoke West Mall</option>
+                                        <option value='The Beaches'>The Beaches</option>
+                                        <option value='Kensington-Chinatown'>Kensington-Chinatown</option>
+                                        <option value='Bayview Woods-Steeles'>Bayview Woods-Steeles</option>
+                                        <option value='Ionview'>Ionview</option>
+                                        <option value='Princess-Rosethorn'>Princess-Rosethorn</option>
+                                        <option value='West Humber-Clairville'>West Humber-Clairville</option>
+                                        <option value='Newtonbrook East'>Newtonbrook East</option>
+                                        <option value='Mount Pleasant East'>Mount Pleasant East</option>
+                                        <option value='Yonge-Eglinton'>Yonge-Eglinton</option>
+                                        <option value='Markland Wood'>Markland Wood</option>
+                                        <option value='York University Heights'>York University Heights</option>
+                                        <option value='Blake-Jones'>Blake-Jones</option>
+                                        <option value='Thorncliffe Park'>Thorncliffe Park</option>
+                                        <option value='Wychwood'>Wychwood</option>
+                                        <option value='West Hill'>West Hill</option>
+                                        <option value='Rouge'>Rouge</option>
+                                        <option value='Bayview Village'>Bayview Village</option>
+                                        <option value='Greenwood-Coxwell'>Greenwood-Coxwell</option>
+                                        <option value='Forest Hill South'>Forest Hill South</option>
+                                        <option value='Banbury-Don Mills'>Banbury-Don Mills</option>
+                                        <option value='Centennial Scarborough'>Centennial Scarborough</option>
+                                        <option value='Lambton Baby Point'>Lambton Baby Point</option>
+                                        <option value='Henry Farm'>Henry Farm</option>
+                                        <option value='Broadview North'>Broadview North</option>
+                                        <option value='Mount Olive-Silverstone-Jamestown'>Mount Olive-Silverstone-Jamestown</option>
+                                        <option value='Woodbine Corridor'>Woodbine Corridor</option>
+                                        <option value='Little Portugal'>Little Portugal</option>
+                                        <option value='Weston-Pellam Park'>Weston-Pellam Park</option>
+                                        <option value="Tam O'Shanter-Sullivan">Tam O'Shanter-Sullivan</option>
+                                        <option value='Willowdale East'>Willowdale East</option>
+                                        <option value='Briar Hill-Belgravia'>Briar Hill-Belgravia</option>
+                                        <option value='Malvern'>Malvern</option>
+                                        <option value='Stonegate-Queensway'>Stonegate-Queensway</option>
+                                    </select> 
                                 </li>
                                 <li class="list-group-item">
                                     <select class="form-select" aria-label="Default select example" name="borough">
                                         <option selected>Borough</option>
-                                        <option value="100%">100%</option>
-                                        <option value="90-99%">90-99%</option>
-                                        <option value="50-89%">50-89%</option>
-                                        <option value="0-49%">0-49%</option>
+                                        <option value="East York">East York</option>
+                                        <option value="Scarborough">Scarborough</option>
+                                        <option value="North York">North York</option>
+                                        <option value="Downtown Toronto">Downtown Toronto</option>
+                                        <option value="York">York</option>
+                                        <option value="East Toronto">East Toronto</option>
+                                        <option value="West Toronto">West Toronto</option>
+                                        <option value="Etobicoke">Etobicoke</option>
+                                        <option value="Central Toronto">Central Toronto</option>
+                                        <option value="unkown">Unkown</option>
                                     </select>   
                                 </li>
                             </ul>
@@ -142,8 +290,14 @@
                                     <input type="number" placeholder="1" name="number_of_reviews" required/>
                                 </li>
                                 <li class="list-group-item">
-                                    <label for="rating" class="form-label">Average Rating</label>
-                                    <input type="range" class="form-range" min="1" max="5" step="1" name="average_rating_overall">
+                                    <select class="form-select" aria-label="Default select example" name="avg_rating_overall">
+                                        <option selected>Average Rating</option>
+                                        <option value="5">5</option>
+                                        <option value="4">4</option>
+                                        <option value="3">3</option>
+                                        <option value="2">2</option>
+                                        <option value="1">1</option>
+                                    </select>
                                 </li>
                             </ul> 
                         </div>
@@ -274,6 +428,48 @@
                                     <input type='hidden' value='0' name='gym'>
                                     <label class="form-check-label" for="flexCheckDefault">
                                         Gym
+                                    </label>
+                                </li>
+                                <li class="list-group-item form-check">
+                                    <input class="form-check-input" type="checkbox" value="1" name="breakfast">
+                                    <input type='hidden' value='0' name='breakfast'>
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Breakfast
+                                    </label>
+                                </li>
+                                <li class="list-group-item form-check">
+                                    <input class="form-check-input" type="checkbox" value="1" name="child_friendly">
+                                    <input type='hidden' value='0' name='child_friendly'>
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Child friendly
+                                    </label>
+                                </li>
+                                <li class="list-group-item form-check">
+                                    <input class="form-check-input" type="checkbox" value="1" name="nature_and_views">
+                                    <input type='hidden' value='0' name='nature_and_views'>
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Nature and views
+                                    </label>
+                                </li>
+                                <li class="list-group-item form-check">
+                                    <input class="form-check-input" type="checkbox" value="1" name="event_suitable">
+                                    <input type='hidden' value='0' name='event_suitable'>
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Event suitable
+                                    </label>
+                                </li>
+                                <li class="list-group-item form-check">
+                                    <input class="form-check-input" type="checkbox" value="1" name="smoking_allowed">
+                                    <input type='hidden' value='0' name='smoking_allowed'>
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Smoking allowed
+                                    </label>
+                                </li>                             
+                                <li class="list-group-item form-check">
+                                    <input class="form-check-input" type="checkbox" value="1" name="accessible">
+                                    <input type='hidden' value='0' name='accessible'>
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Accessible
                                     </label>
                                 </li>
                                 <li class="list-group-item form-check">

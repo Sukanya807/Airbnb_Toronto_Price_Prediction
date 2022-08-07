@@ -53,7 +53,7 @@ Notebook:
 2. [Exploratory Data Analysis Notebook](https://github.com/Sukanya807/Capstone_Project_Group_01/blob/main/ETL/airbnb_ETL.ipynb)
 3. [Machine Learning Notebook](https://github.com/Sukanya807/Capstone_Project_Group_01/blob/main/ML/Machine_Learning.ipynb)
 
-## Entity Relationship Diagram (ERD)
+## Data Overview
 
 ![](Resources/images/airbnb_db_erd.png)
 

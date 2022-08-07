@@ -362,7 +362,7 @@ Our best performing machine learning model was only able to explain 68% of the v
 
 Contributors :
 
-- Caroline Semerano
+- Carolina Semerano
 - Sukanya Ghosh
 - Yesha Tharwala
 

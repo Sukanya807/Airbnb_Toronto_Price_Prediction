@@ -191,7 +191,7 @@ This fact gets further corroborated by the analysis done on the calendar.csv.gz 
 
 ### Majority of the Property Types in Toronto
 
-![](Resources/images/tab_img/majority_property_type.png)
+![](Resources/images/tableau_img/majority_property_type.png)
 
 #### Observations
 
@@ -201,7 +201,7 @@ This fact gets further corroborated by the analysis done on the calendar.csv.gz 
 
 ### Average Price by Room Type
 
-![](Resources/images/tab_img/price_by_room_type.png)
+![](Resources/images/tableau_img/price_by_room_type.png)
 
 #### Observations
 
@@ -212,7 +212,7 @@ This fact gets further corroborated by the analysis done on the calendar.csv.gz 
 
 ### Average Price by the number of people the property accommodates
 
-![](Resources/images/tab_img/avg_price_on_accommodation.png)
+![](Resources/images/tableau_img/avg_price_on_accommodation.png)
 
 #### Observations
 
@@ -222,7 +222,7 @@ This fact gets further corroborated by the analysis done on the calendar.csv.gz 
 
 ### 5 Most and Least Expensive Neighbourhoods
 
-![](Resources/images/tab_img/expensive_neighbourhoods.png)
+![](Resources/images/tableau_img/expensive_neighbourhoods.png)
 
 ### Observations
 
@@ -254,7 +254,7 @@ The five least expensive neighbourhoods in Toronto are
 
 ### How much difference does the ratings make in terms of price?
 
-![](Resources/images/tab_img/price_vs_avg_rating.png)
+![](Resources/images/tableau_img/price_vs_avg_rating.png)
 
 ### Observations
 
@@ -263,7 +263,7 @@ The five least expensive neighbourhoods in Toronto are
 
 ### Superhost, Verified Identity, Instant Bookable vs. price
 
-![](Resources/images/skg/superhost_id_instant.png)
+![](Resources/images/tableau_img/superhost_id_instant.png)
 
 ### Observations
 
@@ -273,7 +273,7 @@ The five least expensive neighbourhoods in Toronto are
 
 ### Popular Amenities and their impact on Average Price
 
-1[](Resources/images/tab_img/amenities_by_borough.png)
+1[](Resources/images/tableau_img/amenities_by_borough.png)
 ![](Resources/images/skg/amenities_1.png)    
 ![](Resources/images/skg/amenities_2.png)
 ![](Resources/images/skg/amenities_3.png)
@@ -316,7 +316,7 @@ Most Airbnbs charge higher average prices for amenities like:
 
 We have tried different machine learning regression models on the clean data to predict prices as accurately as possible. Columns with high correlations have been removed or transformed and data has been scaled using 'yeo-johnson' Power Transformer to achieve normal distribution as much as possible.
 
-![](Resources/images/tab_img/corr_matrix.png)
+![](Resources/images/tableau_img/corr_matrix.png)
 
 ### Different Models Tried:
 
@@ -329,7 +329,7 @@ We have tried different machine learning regression models on the clean data to 
 
 The XGBoost method performed the best out of all models.
 
-![](Resources/images/tab_img/XGBoost_ML.png)
+![](Resources/images/tableau_img/XGBoost_ML.png)
 
 ### Hyper-Parameter Tuning Using GridSearchCV 
 
@@ -337,14 +337,14 @@ We have further tried to improve our model through hyper-parameter tuning using 
 
 ##### GridSearchCV Results
 
-1[](Resources/images/tab_img/XGBoost_HyperParameter.png)
+1[](Resources/images/tableau_img/XGBoost_HyperParameter.png)
 
 After hyper-parameter tuning using the GridSearchCV method, we achieved an RMSE testing score of 67.4 with a R² score of 0.676.
 
 
 #####  Top 10 Feature Importance using XGBoost Regressor Model
 
-![](Resources/images/tab_img/feature_imp_ML.png)
+![](Resources/images/tableau_img/feature_imp_ML.png)
 
 As per the XGBoost model, the most important features for Airbnb price prediction are:
 

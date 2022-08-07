@@ -131,6 +131,8 @@ A PostgreSQL database connection has been established using AWS and the cleaned 
 
 ### Airbnb Listings Distribution in Toronto
 
+There are approximately 15,000 Airbnb listings in Toronto as of June,2022.
+
 ![](Resources/images/skg/airbnb_map.png)
 
 ### Number of hosts joining Airbnb each month
@@ -193,7 +195,7 @@ This fact gets further corroborated by the analysis done on the calendar.csv.gz 
 
 ### Majority of the Property Types in Toronto
 
-![](Resources/images/skg/majority_property_types.png)
+![](Resources/images/tab_img/majority_property_type.png)
 
 #### Observations
 
@@ -203,7 +205,7 @@ This fact gets further corroborated by the analysis done on the calendar.csv.gz 
 
 ### Average Price by Room Type
 
-![](Resources/images/skg/avg_price_room.png)
+![](Resources/images/tab_img/price_by_room_type.png)
 
 #### Observations
 
@@ -214,7 +216,7 @@ This fact gets further corroborated by the analysis done on the calendar.csv.gz 
 
 ### Average Price by the number of people the property accommodates
 
-![](Resources/images/skg/price_vs_accommodates.png)
+![](Resources/images/tab_img/avg_price_on_accommodation.png)
 
 #### Observations
 
@@ -222,9 +224,9 @@ This fact gets further corroborated by the analysis done on the calendar.csv.gz 
 - cheap options are available for single person at less than $100 per night.
 - average rental prices are above $200 for number of guests exceeding 4
 
-### 5 Most Expensive Neighbourhoods
+### 5 Most and Least Expensive Neighbourhoods
 
-![](Resources/images/skg/five_expensive_neighbourhoods.png)
+![](Resources/images/tab_img/expensive_neighbourhoods.png)
 
 ### Observations
 
@@ -235,12 +237,6 @@ The five most expensive neighbourhoods in Toronto are
 - Rustic with an average price of $198.
 - Bay Street Corridor with an average price of $ 197.
 - Niagara with an average price of $196.
-
-### 5 Least Expensive Neighbourhoods
-
-![](Resources/images/skg/least_expensive_neighbourhoods.png)
-
-### Observations
 
 The five least expensive neighbourhoods in Toronto are
 
@@ -262,42 +258,26 @@ The five least expensive neighbourhoods in Toronto are
 
 ### How much difference does the ratings make in terms of price?
 
-![](Resources/images/skg/price_vs_overall_ratings.png)
+![](Resources/images/tab_img/price_vs_avg_rating.png)
 
 ### Observations
 
 - Properties with Excellent Ratings can charge 8.4% higher prices than properties with Average Ratings.
 - Properties with Excellent Ratings can charge 13% higher prices on an average compared to properties with Poor Ratings.
 
-### Does Being a SuperHost have an impact on price?
+### Superhost, Verified Identity, Instant Bookable vs. price
 
-![](Resources/images/skg/host_is_superhost.png)
-
-### Observations
-
-- Around 25% of the Airbnb hosts are superhosts
-- However, being a superhost does not seem to have a significant impact on average price charged per night.
-
-### Is there significant relationship between price and verified host identity?
-
-![](Resources/images/skg/host_identity_verified.png)
+![](Resources/images/skg/superhost_id_instant.png)
 
 ### Observations
 
-- Around 90% of the Airbnb hosts in Toronto are verified.
-- Hosts with verified identity charge approximately 25% higher prices compared to hosts whose identities are not verified.
-
-### Relationship between price and Instant Booking Priviledges
-
-![](Resources/images/skg/instant_bookable.png)
-
-### Observations
-
-- Around 29% of the Airbnbs in Toronto are instantly bookable.
-- It does not provide any benefits in terms of average nighly prices charged.
+- Around 25% of the Airbnb hosts are superhosts. However, being a superhost does not seem to have a significant impact on average price charged per night.
+- Around 90% of the Airbnb hosts in Toronto are verified. Hosts with verified identity charge approximately 25% higher prices compared to hosts whose identities are not verified.
+- Around 29% of the Airbnbs in Toronto are instantly bookable. It does not provide any benefits in terms of average nighly prices charged.
 
 ### Popular Amenities and their impact on Average Price
 
+1[](Resources/images/tab_img/amenities_by_borough.png)
 ![](Resources/images/skg/amenities_1.png)    
 ![](Resources/images/skg/amenities_2.png)
 ![](Resources/images/skg/amenities_3.png)
@@ -340,7 +320,7 @@ Most Airbnbs charge higher average prices for amenities like:
 
 We have tried different machine learning regression models on the clean data to predict prices as accurately as possible. Columns with high correlations have been removed or transformed and data has been scaled using 'yeo-johnson' Power Transformer to achieve normal distribution as much as possible.
 
-![](Resources/images/skg/corr.png)
+![](Resources/images/tab_img/corr_matrix.png)
 
 ### Different Models Tried:
 
@@ -351,21 +331,24 @@ We have tried different machine learning regression models on the clean data to 
 - ExtraTreesRegressor Model - RMSE test: 68.75, R^2 test: 0.662
 - XGBoostRegressor Model - RMSE test: 68.26, R^2 test: 0.667
 
+The XGBoost method performed the best out of all models.
 
+![](Resources/images/tab_img/XGBoost_ML.png)
 
+### Hyper-Parameter Tuning Using GridSearchCV 
 
-### Hyper-Parameter Tuning Using GridSearchCV and RandomSearch CV
-
-We have further tried to improve our model through hyper-parameter tuning using GridSearchCV method. Deep Learning methods were not tested on this data since we felt that the volume of data available does not justify using neural networks. However, there has not been any significant improvements in the results.
+We have further tried to improve our model through hyper-parameter tuning using GridSearchCV method. Deep Learning methods were not tested on this data since we felt that the volume of data available does not justify using neural networks. 
 
 ##### GridSearchCV Results
 
-
+1[](Resources/images/tab_img/XGBoost_HyperParameter.png)
 
 After hyper-parameter tuning using the GridSearchCV method, we achieved an RMSE testing score of 67.4 with a R² score of 0.676.
 
 
 #####  Top 10 Feature Importance using XGBoost Regressor Model
+
+![](Resources/images/tab_img/feature_imp_ML.png)
 
 As per the XGBoost model, the most important features for Airbnb price prediction are:
 

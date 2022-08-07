@@ -111,6 +111,7 @@ def home():
             'host_listings_count' : int(request.form.get("host_listings_count")),
             'host_identity_verified' : int(request.form.get("host_identity_verified")),
             'host_is_superhost' : int(request.form.get("host_is_superhost")),
+            'bathroom' : int(request.form.get("bathroom")),
             neighbourhood_col : 1,
             borough_col : 1,
             'instant_bookable' : int(request.form.get("instant_bookable")),
@@ -143,9 +144,14 @@ def home():
 
         prediction = model.predict(data_df)
 
-        prediction_text = (f'<div class="alert alert-primary" role="alert">Your property should be listed for $ {str(int(prediction[0]))}</div>')
-
-        return prediction_text
+        return result(prediction) 
     return render_template('index.html')
+
+@app.route('/result')
+def result(prediction):
+    prediction_text = (f'{prediction[0]:.2f}')
+
+    return render_template('result.html', prediction = prediction_text)
+
 if __name__ == '__main__':
    app.run()

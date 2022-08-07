@@ -260,6 +260,12 @@
                         <input type="number" value="1" min="0" name="accommodates"  class="form-control" required/>
                     </div>
                     <div class="col-md-auto p-3">
+                        <label for="bathroom">Bathrooms</label>
+                        <input type="number" value="1" min="0" name="bathroom"  class="form-control" required/>
+                    </div>
+                </div>
+                <div class="row justify-content-md-center gx-5">
+                    <div class="col-md-auto p-3">
                         <label for="MinimumNights">Minimum Nights</label>
                         <input type="number" value="1" min="0"name="minimum_nights"  class="form-control" required/>
                     </div>
@@ -484,7 +490,7 @@
                             Accessible
                         </label>
                     </div>
-                    <div class="list-group-item form-check">
+                    <div class="col-md-auto form-check p-3">
                         <input class="form-check-input" type="checkbox" value="1" name="other_facilities">
                         <input type='hidden' value='0' name='other_facilities'>
                         <label class="form-check-label" for="flexCheckDefault">
@@ -493,7 +499,9 @@
                     </div>
                 </div>
                 <div class="row justify-content-md-center gx-5"> 
-                    <input class="btn-lg btn-primary" type="submit">
+                    <div class="col-md-auto form-check p-3">
+                        <input class="btn-lg btn-primary" type="submit">
+                    </div>
                 </div>
             </div>
             </form>

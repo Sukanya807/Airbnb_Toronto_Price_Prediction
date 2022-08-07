@@ -151,9 +151,7 @@ This fact gets further corroborated by the analysis done on the calendar.csv.gz 
 - Average nightly prices are the highest in August. This could be due to summer weather in Toronto accompanied by summer holidays in schools.
 - In terms of weekdays, Saturdays command the highest average nightly prices.
 
-![](Resources/images/skg/price_by_month.png)
-
-![](Resources/images/skg/price_by_weekday.png)
+![](Resources/images/tableau_img/month_weekday.png)
 
 ### Average Number of Listings Per Host
 

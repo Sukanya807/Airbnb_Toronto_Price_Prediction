@@ -371,7 +371,6 @@ The final machine learning model has been exported using the xgboost library and
 
 ![](Resources/images/app/aap_result.png)
 
-
 ## Conclusion
 
 Our best performing machine learning model was only able to explain 68% of the variation in price. The remaining 32% could be made of other features that were not present in our data like points of interests near the property, the property's proximity to restaurants, cafes,etc. We have not performed Natural Language Processing or Sentiment Analysis on this dataset. Perhaps a more detailed analysis of the reviews column could also improve the predictions. Finally, we believe that incorporating image quality into the machine learning model can also be helpful since photos of the properties on Airbnb websites can have a major impact on guests and can command higher prices as well.

@@ -36,7 +36,7 @@ Analysis:
 - Python (Pandas, Numpy, Matplotlib, Seaborn)
 
 Database:
-- PostgreSQL and Amazon Web Services
+- PostgreSQL and Amazon Web Services 
 
 Visualization:
 - Python
@@ -168,9 +168,7 @@ This fact gets further corroborated by the analysis done on the calendar.csv.gz 
 
 ### Airbnb Yearly Average Price Change
 
-![](Resources/images/skg/mean_nightly_price.png)
-
-![](Resources/images/skg/mean_nightly_price_diag.png)
+![](Resources/images/tableau_img/yearly_price_change.png)
 
 #### Observations
 

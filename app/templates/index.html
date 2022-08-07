@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb Price Predictor</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="jumbotron">
+            <h1 class="display-4 text-center">Airbnb Toronto Price Predictor</h1>
+        </div>
+        <div class="container-fluid text-center">
+            <form method="post">
+                <h3>Host Info</h3>
+                <div class="row justify-content-md-center gx-5">
+                    <div class="col-md-auto p-3">
+                        <label for="host_since">Host Since</label>
+                        <select class="form-control" aria-label="Default select example" name="host_since" required>
+                            <option value="less than 3 years">less than 3 years</option>
+                            <option value="3-5 years">3-5 years</option>
+                            <option value="5-8 years">5-8 years</option>
+                            <option value="8-10 years">8-10 years</option>
+                            <option value="more than 10 years">More than 10 years</option>
+                        </select>
+                    </div>
+                    <div class="col-md-auto p-3">
+                        <label for="host_response_time">Host Response Time</label>
+                        <select class="form-control" aria-label="Default select example" name="host_response_time" required>
+                            <option value="Within an hour">within an hour</option>
+                            <option value="Within a few hours">within a few hours</option>
+                            <option value="Within a day">within a day</option>
+                            <option value="A few days or more">a few days or more</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row justify-content-md-center gx-5">
+                    <div class="col-md-auto p-3">
+                        <label for="host_response_rate">Host Response Rate</label>
+                        <select class="form-control" aria-label="Default select example" name="host_response_rate" required>
+                            <option value="100%">100%</option>
+                            <option value="90-99%">90-99%</option>
+                            <option value="50-89%">50-89%</option>
+                            <option value="0-49%">0-49%</option>
+                        </select>   
+                    </div>
+                
+                    <div class="col-md-auto p-3">
+                        <label for="HostListingCount">Number of listings</label>
+                        <input type="number" value="1" min="0" name="host_listings_count" class="form-control" required/>
+                    </div> 
+                </div>
+                <div class="row justify-content-md-center gx-5"> 
+                    <div class="col-md-auto form-check p-3">
+                        <input class="form-check-input" type="checkbox" value="1" name="host_identity_verified">
+                        <input type='hidden' value='0' name='host_identity_verified'>
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Host Identity Verified
+                        </label>
+                    </div>	
+                    <div class="form-check col-md-auto p-3">
+                        <input class="form-check-input" type="checkbox" value="1" name="host_is_superhost">
+                        <input type='hidden' value='0' name='host_is_superhost'>
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Host is Superhost
+                        </label>
+                    </div>
+                </div>
+                
+                <h3>Location</h3>
+                <div class="row justify-content-md-center gx-5">
+                    <div class="col-md-4 p-3">
+                        <label for="neighbourhood">Neighbourhood</label>
+                        <select class="form-control" aria-label="Default select example" name="neighbourhood" required>
+                            <option value='Agincourt North'>Agincourt North</option>
+                            <option value='Agincourt South-Malvern West'>Agincourt South-Malvern West</option>
+                            <option value='Alderwood'>Alderwood</option>
+                            <option value='Annex'>Annex</option>
+                            <option value='Banbury-Don Mills'>Banbury-Don Mills</option>
+                            <option value='Bathurst Manor'>Bathurst Manor</option>
+                            <option value='Bay Street Corridor'>Bay Street Corridor</option>
+                            <option value='Bayview Village'>Bayview Village</option>
+                            <option value='Bayview Woods-Steeles'>Bayview Woods-Steeles</option>
+                            <option value='Bedford Park-Nortown'>Bedford Park-Nortown</option>
+                            <option value='Beechborough-Greenbrook'>Beechborough-Greenbrook</option>
+                            <option value='Bendale'>Bendale</option>
+                            <option value='Birchcliffe-Cliffside'>Birchcliffe-Cliffside</option>
+                            <option value='Black Creek'>Black Creek</option>
+                            <option value='Blake-Jones'>Blake-Jones</option>
+                            <option value='Briar Hill-Belgravia'>Briar Hill-Belgravia</option>
+                            <option value='Bridle Path-Sunnybrook-York Mills'>Bridle Path-Sunnybrook-York Mills</option>
+                            <option value='Broadview North'>Broadview North</option>
+                            <option value='Brookhaven-Amesbury'>Brookhaven-Amesbury</option>
+                            <option value='Cabbagetown-South St.James Town'>Cabbagetown-South St.James Town</option>
+                            <option value='Caledonia-Fairbank'>Caledonia-Fairbank</option>
+                            <option value='Casa Loma'>Casa Loma</option>
+                            <option value='Centennial Scarborough'>Centennial Scarborough</option>
+                            <option value='Church-Yonge Corridor'>Church-Yonge Corridor</option>
+                            <option value='Clairlea-Birchmount'>Clairlea-Birchmount</option>
+                            <option value='Clanton Park'>Clanton Park</option>
+                            <option value='Cliffcrest'>Cliffcrest</option>
+                            <option value='Corso Italia-Davenport'>Corso Italia-Davenport</option>
+                            <option value='Danforth'>Danforth</option>
+                            <option value='Danforth East York'>Danforth East York</option>
+                            <option value='Don Valley Village'>Don Valley Village</option>
+                            <option value='Dorset Park'>Dorset Park</option>
+                            <option value='Dovercourt-Wallace Emerson-Junction'>Dovercourt-Wallace Emerson-Junction</option>
+                            <option value='Downsview-Roding-CFB'>Downsview-Roding-CFB</option>
+                            <option value='Dufferin Grove'>Dufferin Grove</option>
+                            <option value='East End-Danforth'>East End-Danforth</option>
+                            <option value='Edenbridge-Humber Valley'>Edenbridge-Humber Valley</option>
+                            <option value='Eglinton East'>Eglinton East</option>
+                            <option value='Elms-Old Rexdale'>Elms-Old Rexdale</option>
+                            <option value='Englemount-Lawrence'>Englemount-Lawrence</option>
+                            <option value='Eringate-Centennial-West Deane'>Eringate-Centennial-West Deane</option>
+                            <option value='Etobicoke West Mall'>Etobicoke West Mall</option>
+                            <option value='Flemingdon Park'>Flemingdon Park</option>
+                            <option value='Forest Hill North'>Forest Hill North</option>
+                            <option value='Forest Hill South'>Forest Hill South</option>
+                            <option value='Glenfield-Jane Heights'>Glenfield-Jane Heights</option>
+                            <option value='Greenwood-Coxwell'>Greenwood-Coxwell</option>
+                            <option value='Guildwood'>Guildwood</option>
+                            <option value='Henry Farm'>Henry Farm</option>
+                            <option value='High Park North'>High Park North</option>
+                            <option value='High Park-Swansea'>High Park-Swansea</option>
+                            <option value='Highland Creek'>Highland Creek</option>
+                            <option value='Hillcrest Village'>Hillcrest Village</option>
+                            <option value='Humber Heights-Westmount'>Humber Heights-Westmount</option>
+                            <option value='Humber Summit'>Humber Summit</option>
+                            <option value='Humbermede'>Humbermede</option>
+                            <option value='Humewood-Cedarvale'>Humewood-Cedarvale</option>
+                            <option value='Ionview'>Ionview</option>
+                            <option value='Islington-City Centre West'>Islington-City Centre West</option>
+                            <option value='Junction Area'>Junction Area</option>
+                            <option value='Keelesdale-Eglinton West'>Keelesdale-Eglinton West</option>
+                            <option value='Kennedy Park'>Kennedy Park</option>
+                            <option value='Kensington-Chinatown'>Kensington-Chinatown</option>
+                            <option value='Kingsview Village-The Westway'>Kingsview Village-The Westway</option>
+                            <option value='Kingsway South'>Kingsway South</option>
+                            <option value='Lambton Baby Point'>Lambton Baby Point</option>
+                            <option value="L'Amoreaux">L'Amoreaux</option>
+                            <option value='Lansing-Westgate'>Lansing-Westgate</option>
+                            <option value='Lawrence Park North'>Lawrence Park North</option>
+                            <option value='Lawrence Park South'>Lawrence Park South</option>
+                            <option value='Leaside-Bennington'>Leaside-Bennington</option>
+                            <option value='Little Portugal'>Little Portugal</option>
+                            <option value='Long Branch'>Long Branch</option>
+                            <option value='Malvern'>Malvern</option>
+                            <option value='Maple Leaf'>Maple Leaf</option>
+                            <option value='Markland Wood'>Markland Wood</option>
+                            <option value='Milliken'>Milliken</option>
+                            <option value='Mimico (includes Humber Bay Shores)'>Mimico (includes Humber Bay Shores)</option>
+                            <option value='Morningside'>Morningside</option>
+                            <option value='Moss Park'>Moss Park</option>
+                            <option value='Mount Dennis'>Mount Dennis</option>
+                            <option value='Mount Olive-Silverstone-Jamestown'>Mount Olive-Silverstone-Jamestown</option>
+                            <option value='Mount Pleasant East'>Mount Pleasant East</option>
+                            <option value='Mount Pleasant West'>Mount Pleasant West</option>
+                            <option value='New Toronto'>New Toronto</option>
+                            <option value='Newtonbrook East'>Newtonbrook East</option>
+                            <option value='Newtonbrook West'>Newtonbrook West</option>
+                            <option value='Niagara'>Niagara</option>
+                            <option value='North Riverdale'>North Riverdale</option>
+                            <option value='North St.James Town'>North St.James Town</option>
+                            <option value='Oakridge'>Oakridge</option>
+                            <option value='Oakwood Village'>Oakwood Village</option>
+                            <option value="O'Connor-Parkview">O'Connor-Parkview</option>
+                            <option value='Old East York'>Old East York</option>
+                            <option value='Palmerston-Little Italy'>Palmerston-Little Italy</option>
+                            <option value='Parkwoods-Donalda'>Parkwoods-Donalda</option>
+                            <option value='Pelmo Park-Humberlea'>Pelmo Park-Humberlea</option>
+                            <option value='Playter Estates-Danforth'>Playter Estates-Danforth</option>
+                            <option value='Pleasant View'>Pleasant View</option>
+                            <option value='Princess-Rosethorn'>Princess-Rosethorn</option>
+                            <option value='Regent Park'>Regent Park</option>
+                            <option value='Rexdale-Kipling'>Rexdale-Kipling</option>
+                            <option value='Rockcliffe-Smythe'>Rockcliffe-Smythe</option>
+                            <option value='Roncesvalles'>Roncesvalles</option>
+                            <option value='Rosedale-Moore Park'>Rosedale-Moore Park</option>
+                            <option value='Rouge'>Rouge</option>
+                            <option value='Runnymede-Bloor West Village'>Runnymede-Bloor West Village</option>
+                            <option value='Rustic'>Rustic</option>
+                            <option value='Scarborough Village'>Scarborough Village</option>
+                            <option value='South Parkdale'>South Parkdale</option>
+                            <option value='South Riverdale'>South Riverdale</option>
+                            <option value='St.Andrew-Windfields'>St.Andrew-Windfields</option>
+                            <option value='Steeles'>Steeles</option>
+                            <option value='Stonegate-Queensway'>Stonegate-Queensway</option>
+                            <option value="Tam O'Shanter-Sullivan">Tam O'Shanter-Sullivan</option>
+                            <option value='Taylor-Massey'>Taylor-Massey</option>
+                            <option value='The Beaches'>The Beaches</option>
+                            <option value='Thistletown-Beaumond Heights'>Thistletown-Beaumond Heights</option>
+                            <option value='Thorncliffe Park'>Thorncliffe Park</option>
+                            <option value='Trinity-Bellwoods'>Trinity-Bellwoods</option>
+                            <option value='University'>University</option>
+                            <option value='Victoria Village'>Victoria Village</option>
+                            <option value='Waterfront Communities-The Island'>Waterfront Communities-The Island</option>
+                            <option value='West Hill'>West Hill</option>
+                            <option value='West Humber-Clairville'>West Humber-Clairville</option>
+                            <option value='Westminster-Branson'>Westminster-Branson</option>
+                            <option value='Weston'>Weston</option>
+                            <option value='Weston-Pellam Park'>Weston-Pellam Park</option>
+                            <option value='Wexford/Maryvale'>Wexford/Maryvale</option>
+                            <option value='Willowdale East'>Willowdale East</option>
+                            <option value='Willowdale West'>Willowdale West</option>
+                            <option value='Willowridge-Martingrove-Richview'>Willowridge-Martingrove-Richview</option>
+                            <option value='Woburn'>Woburn</option>
+                            <option value='Woodbine Corridor'>Woodbine Corridor</option>
+                            <option value='Woodbine-Lumsden'>Woodbine-Lumsden</option>
+                            <option value='Wychwood'>Wychwood</option>
+                            <option value='Yonge-Eglinton'>Yonge-Eglinton</option>
+                            <option value='Yonge-St.Clair'>Yonge-St.Clair</option>
+                            <option value='York University Heights'>York University Heights</option>
+                            <option value='Yorkdale-Glen Park'>Yorkdale-Glen Park</option>
+                        </select> 
+                    </div>
+                </div>
+                <div class="row justify-content-md-center gx-5">
+                    <div class="col-md-4 p-3">
+                        <label for="borough">Borough</label>
+                        <select class="form-control" aria-label="Default select example" name="borough" required>
+                            <option value="Central Toronto">Central Toronto</option>
+                            <option value="Downtown Toronto">Downtown Toronto</option>
+                            <option value="East Toronto">East Toronto</option>
+                            <option value="East York">East York</option>
+                            <option value="Etobicoke">Etobicoke</option>
+                            <option value="North York">North York</option>
+                            <option value="Scarborough">Scarborough</option>
+                            <option value="unkown">Unkown</option>
+                            <option value="West Toronto">West Toronto</option>
+                            <option value="York">York</option>
+                        </select>   
+                    </div>
+                </div>
+              
+                <h3>Property Info</h3>
+                <div class="row justify-content-md-center gx-5">
+                    <div class="col-md-4 p-3">
+                        <label for="property_type">Property Type</label>
+                        <select class="form-control" aria-label="Default select example" name="property_type" required>
+                            <option value="House">House</option>
+                            <option value="Apartment">Apartment</option>
+                            <option value="One Room">One Room</option>
+                            <option value="Shared Room">Shared Room</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row justify-content-md-center gx-5">
+                    <div class="col-md-auto p-3">
+                        <label for="Accomodates">Accomodates</label>
+                        <input type="number" value="1" min="0" name="accommodates"  class="form-control" required/>
+                    </div>
+                    <div class="col-md-auto p-3">
+                        <label for="bathroom">Bathrooms</label>
+                        <input type="number" value="1" min="0" name="bathroom"  class="form-control" required/>
+                    </div>
+                </div>
+                <div class="row justify-content-md-center gx-5">
+                    <div class="col-md-auto p-3">
+                        <label for="MinimumNights">Minimum Nights</label>
+                        <input type="number" value="1" min="0"name="minimum_nights"  class="form-control" required/>
+                    </div>
+                    <div class="col-md-auto p-3">
+                        <label for="MaximumNights">Maximum Nights</label>
+                        <input type="number" value="1" min="0"name="maximum_nights"  class="form-control" required/>
+                    </div>
+                </div>
+                <div class="row justify-content-md-center gx-5">
+                    <div class="form-check col-md-auto p-3">
+                        <input class="form-check-input" type="checkbox" value="1" name="instant_bookable">
+                        <input type='hidden' value='0' name='instant_bookable'>
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Instant Bookable
+                        </label>
+                    </div>
+                    <div class="col-md-auto form-check p-3">
+                        <input class="form-check-input" type="checkbox" value="1" name="has_availability">
+                        <input type='hidden' value='0' name='has_availability'>
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Has availability
+                        </label>
+                    </div>
+                </div>
+                <div class="row justify-content-md-center gx-5">
+                    <div class="col-md-auto p-3">
+                        <label for="Availability90">Nights Available for the next 3 months</label>
+                        <input type="number" value="1" min="0"name="availability_90" class="form-control" required/>
+                    </div> 
+                    <div class="col-md-auto p-3">
+                        <label for="NumberOfReviews">Number of reviews</label>
+                        <input type="number" value="1" min="0"name="number_of_reviews" class="form-control" required/>
+                    </div> 
+                    <div class="col-md-auto p-3">
+                        <label for="avg_rating_overall">Average Rating</label>
+                        <select class="form-control" aria-label="Default select example" name="avg_rating_overall" required>
+                            <option value="5">5</option>
+                            <option value="4">4</option>
+                            <option value="3">3</option>
+                            <option value="2">2</option>
+                            <option value="1">1</option>
+                        </select>
+                    </div>    
+                </div>
+                
+                <h3>Amenities</h3>
+                <div class="row justify-content-md-center gx-5"> 
+                    <div class="col-md-auto form-check p-3">
+                        <input class="form-check-input" type="checkbox" value="1" name="toiletries">
+                        <input type='hidden' value='0' name='toiletries'>
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Toiletries
+                        </label>
+                    </div>
+                    <div class="col-md-auto form-check p-3">
+                        <input class="form-check-input" type="checkbox" value="1" name="high_end_electronics">
+                        <input type='hidden' value='0' name='high_end_electronics'>
+                        <label class="form-check-label" for="flexCheckDefault">
+                        High end eletronics
+                        </label>
+                    </div>
+                    <div class="col-md-auto form-check p-3">
+                        <input class="form-check-input" type="checkbox" value="1" name="ac_heater">
+                        <input type='hidden' value='0' name='ac_heater'>
+                        <label class="form-check-label" for="flexCheckDefault">
+                        AC and Heater
+                        </label>
+                    </div>
+                    <div class="col-md-auto form-check p-3">
+                        <input class="form-check-input" type="checkbox" value="1" name="internet">
+                        <input type='hidden' value='0' name='internet'>
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Internet
+                        </label>
+                    </div>
+                    <div class="col-md-auto form-check p-3">
+                        <input class="form-check-input" type="checkbox" value="1" name="bbq">
+                        <input type='hidden' value='0' name='bbq'>
+                        <label class="form-check-label" for="flexCheckDefault">
+                            BBQ
+                        </label>
+                    </div>
+                </div>
+
+                <div class="row justify-content-md-center gx-5"> 
+                    <div class="col-md-auto form-check p-3">
+                        <input class="form-check-input" type="checkbox" value="1" name="home_appliances">
+                        <input type='hidden' value='0' name='home_appliances'>
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Home Appliences
+                        </label>
+                    </div>
+                    <div class="col-md-auto form-check p-3">
+                        <input class="form-check-input" type="checkbox" value="1" name="coffee_machine">
+                        <input type='hidden' value='0' name='coffee_machine'>
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Coffee Machine
+                        </label>
+                    </div>
+                    <div class="col-md-auto form-check p-3">
+                        <input class="form-check-input" type="checkbox" value="1" name="long_term_stays">
+                        <input type='hidden' value='0' name='long_term_stays'>
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Long term stays
+                        </label>
+                    </div>
+                    <div class="col-md-auto form-check p-3">
+                        <input class="form-check-input" type="checkbox" value="1" name="host_greeting">
+                        <input type='hidden' value='0' name='host_greeting'>
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Host Greetings
+                        </label>
+                    </div>
+                    <div class="col-md-auto form-check p-3">
+                        <input class="form-check-input" type="checkbox" value="1" name="safety">
+                        <input type='hidden' value='0' name='safety'>
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Safety
+                        </label>
+                    </div>
+                </div>
+                <div class="row justify-content-md-center gx-5">   
+                    <div class="col-md-auto form-check p-3">
+                        <input class="form-check-input" type="checkbox" value="1" name="outdoor_space">
+                        <input type='hidden' value='0' name='outdoor_space'>
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Outdoor Space
+                        </label>
+                    </div>
+                    <div class="col-md-auto form-check p-3">
+                        <input class="form-check-input" type="checkbox" value="1" name="hot_tub_sauna_or_pool">
+                        <input type='hidden' value='0' name='hot_tub_sauna_or_pool'>
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Hot Tub, Sauna or Pool
+                        </label>
+                    </div>
+                    <div class="col-md-auto form-check p-3">
+                        <input class="form-check-input" type="checkbox" value="1" name="room_features">
+                        <input type='hidden' value='0' name='room_features'>
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Room Features
+                        </label>
+                    </div>
+                    <div class="col-md-auto form-check p-3">
+                        <input class="form-check-input" type="checkbox" value="1" name="parking">
+                        <input type='hidden' value='0' name='parking'>
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Parking
+                        </label>
+                    </div>
+                    <div class="col-md-auto form-check p-3">
+                        <input class="form-check-input" type="checkbox" value="1" name="kitchen">
+                        <input type='hidden' value='0' name='kitchen'>
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Kitchen
+                        </label>
+                    </div>
+                </div>
+                <div class="row justify-content-md-center gx-5">   
+                    <div class="col-md-auto form-check p-3">
+                        <input class="form-check-input" type="checkbox" value="1" name="elevator">
+                        <input type='hidden' value='0' name='elevator'>
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Elevator
+                        </label>
+                    </div>
+                    <div class="col-md-auto form-check p-3">
+                        <input class="form-check-input" type="checkbox" value="1" name="private_entrance">
+                        <input type='hidden' value='0' name='private_entrance'>
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Private Entrance
+                        </label>
+                    </div>
+                    <div class="col-md-auto form-check p-3">
+                        <input class="form-check-input" type="checkbox" value="1" name="gym">
+                        <input type='hidden' value='0' name='gym'>
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Gym
+                        </label>
+                    </div>
+                    <div class="col-md-auto form-check p-3">
+                        <input class="form-check-input" type="checkbox" value="1" name="breakfast">
+                        <input type='hidden' value='0' name='breakfast'>
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Breakfast
+                        </label>
+                    </div>
+                    <div class="col-md-auto form-check p-3">
+                        <input class="form-check-input" type="checkbox" value="1" name="child_friendly">
+                        <input type='hidden' value='0' name='child_friendly'>
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Child friendly
+                        </label>
+                    </div>
+                </div>
+                <div class="row justify-content-md-center gx-5"> 
+                    <div class="col-md-auto form-check p-3">
+                        <input class="form-check-input" type="checkbox" value="1" name="nature_and_views">
+                        <input type='hidden' value='0' name='nature_and_views'>
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Nature and views
+                        </label>
+                    </div>
+                    <div class="col-md-auto form-check p-3">
+                        <input class="form-check-input" type="checkbox" value="1" name="event_suitable">
+                        <input type='hidden' value='0' name='event_suitable'>
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Event suitable
+                        </label>
+                    </div>
+                    <div class="col-md-auto form-check p-3">
+                        <input class="form-check-input" type="checkbox" value="1" name="smoking_allowed">
+                        <input type='hidden' value='0' name='smoking_allowed'>
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Smoking allowed
+                        </label>
+                    </div>                             
+                    <div class="col-md-auto form-check p-3">
+                        <input class="form-check-input" type="checkbox" value="1" name="accessible">
+                        <input type='hidden' value='0' name='accessible'>
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Accessible
+                        </label>
+                    </div>
+                    <div class="col-md-auto form-check p-3">
+                        <input class="form-check-input" type="checkbox" value="1" name="other_facilities">
+                        <input type='hidden' value='0' name='other_facilities'>
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Other
+                        </label>
+                    </div>
+                </div>
+                <div class="row justify-content-md-center gx-5"> 
+                    <div class="col-md-auto form-check p-3">
+                        <input class="btn-lg btn-primary" type="submit">
+                    </div>
+                </div>
+            </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

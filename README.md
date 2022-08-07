@@ -367,7 +367,7 @@ The final machine learning model has been exported using the xgboost library and
 
 ![](Resources/images/app/app_form.png)
 
-![](Resources/images/app/aap_result.png)
+![](Resources/images/app/webapp_result.png)
 
 ## Conclusion
 

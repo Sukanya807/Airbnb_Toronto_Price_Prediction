@@ -196,9 +196,8 @@ This fact gets further corroborated by the analysis done on the calendar.csv.gz 
 
 #### Observations
 
-- Most of the property types in Downtown Toronto region are apartments.
-- West Toronto has the highest number of individual home type properties.
-- One room options are mostly available in Downtown Toronto and North York
+- Most of the property types in Toronto (more than 50%) are apartments.
+- Downtown Toronto has the highest number of apartments.
 
 ### Average Price by Room Type
 

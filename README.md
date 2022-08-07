@@ -341,74 +341,48 @@ Most Airbnbs charge higher average prices for amenities like:
 
 ## Machine Learning for Price Predictions
 
-We have tried different machine learning regression models on the clean data to predict prices as accurately as possible. All columns with high correlation were removed and the numeric columns have been log transformed to reduce skewness as much as possible. Then the data has been scaled using a Standard Scaler for consistency.
+We have tried different machine learning regression models on the clean data to predict prices as accurately as possible. Columns with high correlations have been removed or transformed and data has been scaled using 'yeo-johnson' Power Transformer to achieve normal distribution as much as possible.
 
 ![](Resources/images/skg/corr.png)
 
 ### Different Models Tried:
 
-- Linear Regression Model - RMSE test: 0.393 , R^2 test: 0.682
-- Support Vector Regression Model - RMSE test: 0.394, R^2 test: 0.681
-- GradientBoostingRegressor Model - RMSE test: 0.363, R^2 test: 0.728
-- RandomForestRegressor Model - RMSE test: 0.357, R^2 test: 0.738
-- ExtraTreesRegressor Model - RMSE test: 0.362, R^2 test: 0.730
-- XGBoostRegressor Model - RMSE test: 0.347, R^2 test: 0.753
+- Linear Regression Model - RMSE test: 79.39 , R^2 test: 0.550
+- Support Vector Regression Model - RMSE test: 100.08, R^2 test: 0.284
+- GradientBoostingRegressor Model - RMSE test: 69.52, R^2 test: 0.655
+- RandomForestRegressor Model - RMSE test: 69.17, R^2 test: 0.658
+- ExtraTreesRegressor Model - RMSE test: 68.75, R^2 test: 0.662
+- XGBoostRegressor Model - RMSE test: 68.26, R^2 test: 0.667
 
-Based on a rule of thumb, it can be said that RMSE (Root Mean Square Error) values between 0.2 and 0.5 shows that the model can relatively predict the data accurately. With our XGBoost Regressor model, we have been able to achieve a RMSE training score of 0.265 and a RMSE testing score of 0.347 along with a R² score of 75.3% which indicates that 75.3% of the variation in Airbnb nightly prices can be attributed to factors such as superhost, verified host identity, host listings count, amenities, neighbourhood, host response, etc.
 
-![](Resources/images/skg/xgboost_regressor.png)
+
 
 ### Hyper-Parameter Tuning Using GridSearchCV and RandomSearch CV
 
-We have further tried to improve our model through hyper-parameter tuning using GridSearchCV and RandomSearch CV methods. Deep Learning methods were not tested on this data since we felt that the volume of data available does not justify using neural networks. However, there has not been any significant improvements in the results.
+We have further tried to improve our model through hyper-parameter tuning using GridSearchCV method. Deep Learning methods were not tested on this data since we felt that the volume of data available does not justify using neural networks. However, there has not been any significant improvements in the results.
 
 ##### GridSearchCV Results
 
-![](Resources/images/skg/xgboost_gridsearch.png)
 
-After hyper-parameter tuning using the GridSearchCV method, we achieved an RMSE testing score of 0.340 with a R² score of 76.1%.
 
-##### RandomSearchCV Results
+After hyper-parameter tuning using the GridSearchCV method, we achieved an RMSE testing score of 67.4 with a R² score of 0.676.
 
-![](Resources/images/skg/xgboost_randomsearch.png)
-
-After hyper-parameter tuning using the GridSearchCV method, we achieved an RMSE testing score of 0.346 with a R² score of 75.4%.
 
 #####  Top 10 Feature Importance using XGBoost Regressor Model
 
-![](Resources/images/skg/feature_imp.png)
+As per the XGBoost model, the most important features for Airbnb price prediction are:
 
-## Summary
+- neighbourhoods
+- property type
+- accommodates
+- bathroom
+- host response rate
 
-- summer is the best time for Airbnb business in Toronto.
-- Average prices are highest in August and the most expensive day of the week is Saturday.
-- Average nightly prices have increased by 7% in 2022 compared to 2021.
-- Minimum prices can be less than $50 while maximum prices can go beyond $800.
-- Majority of the Airbnbs in Toronto are located in the Downtown region.
-- Majority of the Airbnb properties in Toronto are apartments.
-- Almost 70% of the guests prefer renting an entire home or apartment 
-- Average price for renting an entire home/ apartment is $180 , private room is $80, shared room is $70 and hotel room is $60.
-- Airbnb hosts can charge minimum $200 CAD for renting an entire home in majority locations in Toronto.
-- Renting an entire apartment in Downtown Toronto can cost around $200 CAD on an average. 
--  East YorkEast Toronto region seems to be the cheapest of all boroughs with a maximum price of approximately $500.
--  Bridle Path-Sunnybrook-York Mills,Waterfront Communities-The Island, Rustic, Bay Street Corridor and Niagara are the five most expensive neighbourhoods.
--  Black Creek, Eglinton East, West Hill, Glenfield-Jane Heights, Pleasant View are the five least expensive neighbourhoods.
-- For single guests, many one room options are available in the Downtown region and North York. Many cheap options are available at less than $100 per night.
-- Average nightly price is minimum $200 CAD for number of guests exceeding 4 but approximately $550 for 14 guests.
-- Properties with "Excellent" Ratings can charge significantly higher prices.
-- Being a superhost does not seem to have a significant impact on average price charged per night.
-- Hosts with verified identity charge approximately 25% higher prices compared to hosts whose identities are not verified.
-- Instant Booking priviledges does not provide any benefits in terms of average nighly prices charged.
-- Places allowing long term stays and host greetings have lower rent prices per night.
-- Airbnbs can charge higher prices for certain amenities like high-end electronics, home appliances, pools or hot-tubs, bbq facilities, parking, elevator, gyms,etc.
 
 ## Conclusion
 
-Our best performing machine learning model was only able to explain 76% of the variation in price. The remaining 24% could be made of other features that were not present in our data like points of interests near the property, the property's proximity to restaurants, cafes,etc. We have not performed Natural Language Processing or Sentiment Analysis on this dataset. Perhaps a more detailed analysis of the reviews column could also improve the predictions. Finally, we believe that incorporating image quality into the machine learning model can also be helpful since photos of the properties on Airbnb websites can have a major impact on guests and can command higher prices as well.
+Our best performing machine learning model was only able to explain 68% of the variation in price. The remaining 32% could be made of other features that were not present in our data like points of interests near the property, the property's proximity to restaurants, cafes,etc. We have not performed Natural Language Processing or Sentiment Analysis on this dataset. Perhaps a more detailed analysis of the reviews column could also improve the predictions. Finally, we believe that incorporating image quality into the machine learning model can also be helpful since photos of the properties on Airbnb websites can have a major impact on guests and can command higher prices as well.
 
-## Acknowledgements
-
-We would like to thank University of Toronto, our instructor Hassan Ahmed and all our Teaching Instructors for their unconditional support throughout the bootcamp course.
 
 Contributors :
 

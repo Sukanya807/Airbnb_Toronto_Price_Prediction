@@ -107,7 +107,7 @@ def home():
             host_active_days_col : 1,
             host_response_time_col : 1,
             host_response_rate_col: 1,
-            'has_availability': 1, # TODO add field
+            'has_availability': int(request.form.get("has_availability")),
             'host_listings_count' : int(request.form.get("host_listings_count")),
             'host_identity_verified' : int(request.form.get("host_identity_verified")),
             'host_is_superhost' : int(request.form.get("host_is_superhost")),

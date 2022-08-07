@@ -1,4 +1,4 @@
-# Airbnb Toronto Capstone Project
+# Airbnb Toronto Price Prediction
 
 ![](Resources/images/AirBnB_Feature-Image3.jpg)
 
@@ -45,6 +45,11 @@ Visualization:
 Machine Learning:
 - XGBoost Regression Model (Scikit-learn) 
 - GridSearch CV hyper-parameter tuning
+
+Web App:
+- HTML [Index](https://github.com/Sukanya807/Airbnb_Toronto_Price_Prediction/blob/main/app/templates/index.html
+- HTML [Result](https://github.com/Sukanya807/Airbnb_Toronto_Price_Prediction/blob/main/app/templates/result.html)
+- CSS [Styling](https://github.com/Sukanya807/Airbnb_Toronto_Price_Prediction/blob/main/app/templates/static/css/style.css)
 
 Notebook:
 - Jupyter Notebook

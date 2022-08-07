@@ -344,8 +344,6 @@ The XGBoost method performed the best out of all models.
 
 We have further tried to improve our model through hyper-parameter tuning using GridSearchCV method. Deep Learning methods were not tested on this data since we felt that the volume of data available does not justify using neural networks. 
 
-##### GridSearchCV Results
-
 ![](Resources/images/tableau_img/XGBoost_HyperParameter.png)
 
 After hyper-parameter tuning using the GridSearchCV method, we achieved an RMSE testing score of 67.4 with a R² score of 0.676.

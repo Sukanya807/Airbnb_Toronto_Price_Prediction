@@ -60,7 +60,7 @@ Notebook:
 3. [Machine Learning Notebook](https://github.com/Sukanya807/Capstone_Project_Group_01/blob/main/ML/Machine_Learning.ipynb)
 
 Final Presentation:
-- Google Slides [Presentation](https://docs.google.com/presentation/d/1PVYpfuQDHAVlcRUiRHicie7Rb_gDXNRQnftlESyNGtI/edit#slide=id.g13e49e38caa_0_189)
+- Google Slides [Presentation](https://docs.google.com/presentation/d/1ByPOadvob6qtTmD6SOGR4VWDNtkAlaecHv3xMdJT-is/edit#slide=id.gd9c453428_0_16)
 
 ## Data Overview
 

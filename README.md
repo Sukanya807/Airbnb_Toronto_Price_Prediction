@@ -55,8 +55,8 @@ Web App:
 Notebook:
 - Jupyter Notebook
 - Google Colab
-1. [Data Cleaning Notebook](https://github.com/Sukanya807/Capstone_Project_Group_01/blob/main/EDA/exploratory_data_analysis.ipynb)
-2. [Exploratory Data Analysis Notebook](https://github.com/Sukanya807/Capstone_Project_Group_01/blob/main/ETL/airbnb_ETL.ipynb)
+1. [Data Cleaning Notebook](https://github.com/Sukanya807/Capstone_Project_Group_01/blob/main/ETL/airbnb_ETL.ipynb)
+2. [Exploratory Data Analysis Notebook](https://github.com/Sukanya807/Capstone_Project_Group_01/blob/main/EDA/exploratory_data_analysis.ipynb)
 3. [Machine Learning Notebook](https://github.com/Sukanya807/Capstone_Project_Group_01/blob/main/ML/Machine_Learning.ipynb)
 
 Final Presentation:

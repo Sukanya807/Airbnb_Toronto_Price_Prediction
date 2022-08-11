@@ -14,11 +14,11 @@ Although Airbnb provides the host with a general tip regarding the default night
 
 ## Our Goal
 
-The average nightly price of Airbnbs in a city like Toronto can be influenced by multiple factors such as the type of property, number of people it accommodates, the amenties included, the neighbourhood where it is located, etc. This project aims to help the Airbnb hosts decide the average nightly price for their properties and maximize their earnings by using machine learning regression techniques that can accurately predict the base prices.
+The average nightly price of Airbnbs in a city like Toronto can be influenced by multiple factors such as the type of property, number of people it accommodates, the amenties included, the neighbourhood where it is located, etc. This project aims to help the Airbnb hosts decide the average daily price for their properties and maximize their earnings by using machine learning regression techniques that can accurately predict the base prices.
 
 ## Data Overview
 
-The datasets used for this project are sourced from [Inside Airbnb](http://insideairbnb.com/). This site is not associated with or endorsed by Airbnb or any of its competitors. The data utilizes public information compiled from the Airbnb website. No "private" information has been used. The datasets used for this project are recent and was scraped on June 05,2022 and contains all the information on Toronto Airbnb listings that were active as on that date.
+The datasets used for this project are sourced from [Inside Airbnb](http://insideairbnb.com/). This site is not associated with or endorsed by Airbnb or any of its competitors. The data utilizes public information compiled from the Airbnb website. No "private" information has been used. The datasets used for this project are recent and were scraped on June 05,2022. The datasets contains all the information on Toronto Airbnb listings that were active on that date.
 
 We have used the following datasets from the Inside Airbnb website :
 
@@ -36,7 +36,7 @@ Analysis:
 - Python (Pandas, Numpy, Matplotlib, Seaborn)
 
 Database:
-- PostgreSQL and Amazon Web Services [Images Here](https://github.com/Sukanya807/Capstone_Project_Group_01/tree/main/Resources/images/database)
+- PostgreSQL and Amazon Web Services RDS [Images Here](https://github.com/Sukanya807/Capstone_Project_Group_01/tree/main/Resources/images/database)
 
 Visualization:
 - Python
